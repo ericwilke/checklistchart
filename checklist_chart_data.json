@@ -1,0 +1,124 @@
+{
+  "diagnosis": {
+                  "key history": {
+                    "section1": ["item1", "item2"],
+                    "section2": ["item1", "item2"]
+                  },
+                  "risk factors": {
+                    "section1": ["item1", "item2"],
+                    "section2": ["item1", "item2"]
+                  },
+                  "ddx": {
+                    "section1": ["item1", "item2"],
+                    "section2": ["item1", "item2"]
+                  },
+                  "suggested work-up": {
+                    "section1": ["item1", "item2"],
+                    "section2": ["item1", "item2"]
+                  },
+                  "references": {
+                    "section1": ["item1", "item2"],
+                    "section2": ["item1", "item2"]
+                  }
+                },
+  "chest pain": {
+                  "key history": {
+                    "high risk symptoms": [
+                      "diaphoresis",
+                      "pain with radiation",
+                      "vomiting",
+                      "tearing sensation",
+                      "syncope"
+                    ],
+                    "pre-hospital treatment": [
+                      "aspirin",
+                      "nitro"
+                    ]
+                  },
+                  "risk factors": {
+                    "CAD risk factors": [
+                      "known CAD",
+                      "male gender",
+                      "smoker",
+                      "hyperlipidemia",
+                      "hypertension",
+                      "diabetes",
+                      "family history",
+                      "cocaine use",
+                      "lupus",
+                      "auto-immune disease",
+                      "alcoholism",
+                      "HIV",
+                      "chronic renal disease",
+                      "chemo (recent)"
+                    ],
+                    "thoracic aortic dissection risk factors": [
+                      "hypertension",
+                      "first degree realtive with TAD",
+                      "Turner's Syndrome",
+                      "connective tissue disease",
+                      "aortic valve disease"
+                    ],
+                    "pulmonary embolus risk factors": [
+                      "prior DVT or PE",
+                      "malignancy",
+                      "pregnancy or post-partum",
+                      "immobile",
+                      "surgery within last 6 weeks",
+                      "hypercoaguable condition",
+                      "travel > 1000 km"
+                    ]
+                  },
+                  "ddx": {
+                    "critical considerations": [
+                      "ACS/AMI",
+                      "aneurysm",
+                      "aortic stenosis",
+                      "dissection",
+                      "esophageal rupture",
+                      "myocarditis",
+                      "pancreatitis",
+                      "pericarditis",
+                      "pneumonia",
+                      "pneumothorax",
+                      "pulmonary embolus"
+                    ],
+                    "non-critical considerations": [
+                      "atypical chest pain",
+                      "chest wall pain",
+                      "cholelithiasis",
+                      "costochondritis",
+                    ]
+                  },
+                  "suggested work-up": {},
+                  "references": {}
+                },
+  "abdominal pain": {
+                  "key history": {},
+                  "risk factors": {},
+                  "ddx": {},
+                  "suggested work-up": {},
+                  "references": {}
+                },
+  "back pain": {
+                  "key history": {},
+                  "risk factors": {},
+                  "ddx": {},
+                  "suggested work-up": {},
+                  "references": {}
+                },
+  "vertigo or syncope": {
+                  "key history": {},
+                  "risk factors": {},
+                  "ddx": {},
+                  "suggested work-up": {},
+                  "references": {}
+                },
+  "headache": {
+                  "key history": {},
+                  "risk factors": {},
+                  "ddx": {},
+                  "suggested work-up": {},
+                  "references": {}
+                },
+}
