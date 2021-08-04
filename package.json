@@ -1,0 +1,22 @@
+{
+  "name": "checklistchart",
+  "version": "1.0.0",
+  "description": "App to implement the checklist chart system over the web",
+  "main": "checklistchart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericwilke/checklistchart.git"
+  },
+  "author": "Eric and Chris Wilke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericwilke/checklistchart/issues"
+  },
+  "homepage": "https://github.com/ericwilke/checklistchart#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
