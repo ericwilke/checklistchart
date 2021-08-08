@@ -1,16 +1,22 @@
 {
   "diagnosis": {
                   "key history": {
-                    "section1": ["item1", "item2"],
-                    "section2": ["item1", "item2"]
+                    "section1": [{"item1": "unaddressed"},
+                                 {"item2": "unaddressed"}],
+                    "section2": [{"item1": "unaddressed"},
+                                 {"item2": "unaddressed"}],
                   },
                   "risk factors": {
-                    "section1": ["item1", "item2"],
-                    "section2": ["item1", "item2"]
+                    "section1": [{"item1": "unaddressed"},
+                                 {"item2": "unaddressed"}],
+                    "section2": [{"item1": "unaddressed"},
+                                 {"item2": "unaddressed"}],
                   },
                   "ddx": {
-                    "section1": ["item1", "item2"],
-                    "section2": ["item1", "item2"]
+                    "section1": [{"item1": "unaddressed"},
+                                 {"item2": "unaddressed"}],
+                    "section2": [{"item1": "unaddressed"},
+                                 {"item2": "unaddressed"}],
                   },
                   "suggested work-up": {
                     "section1": ["item1", "item2"],
@@ -24,70 +30,71 @@
   "chest pain": {
                   "key history": {
                     "high risk symptoms": [
-                      "diaphoresis",
-                      "pain with radiation",
-                      "vomiting",
-                      "tearing sensation",
-                      "syncope"
+                      {"diaphoresis": "unaddressed"},
+                      {"pain with radiation": "unaddressed"},
+                      {"vomiting": "unaddressed"},
+                      {"tearing sensation": "unaddressed"},
+                      {"syncope": "unaddressed"}
                     ],
                     "pre-hospital treatment": [
-                      "aspirin",
-                      "nitro"
+                      {"aspirin": "unaddressed"},
+                      {"nitro": "unaddressed"}
                     ]
                   },
                   "risk factors": {
                     "CAD risk factors": [
-                      "known CAD",
-                      "male gender",
-                      "smoker",
-                      "hyperlipidemia",
-                      "hypertension",
-                      "diabetes",
-                      "family history",
-                      "cocaine use",
-                      "lupus",
-                      "auto-immune disease",
-                      "alcoholism",
-                      "HIV",
-                      "chronic renal disease",
-                      "chemo (recent)"
+                      {"known CAD": "unaddressed"},
+                      {"male gender": "unaddressed"},
+                      {"smoker": "unaddressed"},
+                      {"hyperlipidemia": "unaddressed"},
+                      {"hypertension": "unaddressed"},
+                      {"diabetes": "unaddressed"},
+                      {"family history": "unaddressed"},
+                      {"cocaine use": "unaddressed"},
+                      {"lupus": "unaddressed"},
+                      {"auto-immune disease": "unaddressed"},
+                      {"alcoholism": "unaddressed"},
+                      {"HIV": "unaddressed"},
+                      {"chronic renal disease": "unaddressed"},
+                      {"chemo (recent)": "unaddressed"}
                     ],
                     "thoracic aortic dissection risk factors": [
-                      "hypertension",
-                      "first degree realtive with TAD",
-                      "Turner's Syndrome",
-                      "connective tissue disease",
-                      "aortic valve disease"
+                      {"hypertension": "unaddressed"},
+                      {"first degree realtive with TAD": "unaddressed"},
+                      {"Turner's Syndrome": "unaddressed"},
+                      {"connective tissue disease": "unaddressed"},
+                      {"aortic valve disease": "unaddressed"}
                     ],
                     "pulmonary embolus risk factors": [
-                      "prior DVT or PE",
-                      "malignancy",
-                      "pregnancy or post-partum",
-                      "immobile",
-                      "surgery within last 6 weeks",
-                      "hypercoaguable condition",
-                      "travel > 1000 km"
+                      {"prior DVT or PE": "unaddressed"},
+                      {"malignancy": "unaddressed"},
+                      {"pregnancy or post-partum": "unaddressed"},
+                      {"immobile": "unaddressed"},
+                      {"surgery within last 6 weeks": "unaddressed"},
+                      {"hypercoaguable condition": "unaddressed"},
+                      {"travel > 1000 km": "unaddressed"}
                     ]
                   },
                   "ddx": {
-                    "critical considerations": [
-                      "ACS/AMI",
-                      "aneurysm",
-                      "aortic stenosis",
-                      "dissection",
-                      "esophageal rupture",
-                      "myocarditis",
-                      "pancreatitis",
-                      "pericarditis",
-                      "pneumonia",
-                      "pneumothorax",
-                      "pulmonary embolus"
+                    "emergent considerations": [
+                      {"ACS/AMI": "unaddressed"},
+                      {"aneurysm": "unaddressed"},
+                      {"aortic stenosis": "unaddressed"},
+                      {"cholecystitis": "unaddressed"},
+                      {"dissection": "unaddressed"},
+                      {"esophageal rupture": "unaddressed"},
+                      {"myocarditis": "unaddressed"},
+                      {"pancreatitis": "unaddressed"},
+                      {"pericarditis": "unaddressed"},
+                      {"pneumonia": "unaddressed"},
+                      {"pneumothorax": "unaddressed"},
+                      {"pulmonary embolus": "unaddressed"}
                     ],
-                    "non-critical considerations": [
-                      "atypical chest pain",
-                      "chest wall pain",
-                      "cholelithiasis",
-                      "costochondritis",
+                    "non-emergent considerations": [
+                      {"atypical chest pain": "unaddressed"},
+                      {"chest wall pain": "unaddressed"},
+                      {"cholelithiasis": "unaddressed"},
+                      {"costochondritis": "unaddressed"},
                     ]
                   },
                   "suggested work-up": {},
