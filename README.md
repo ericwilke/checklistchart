@@ -21,8 +21,8 @@ For `key history`, `risk factors`, and `ddx`, each data point can have one of th
 
 ### Example data format
 
-`{
-  "diagnosis": {
+    {
+        "diagnosis": {
                   "key history": {
                     "section1": [{"item1": "unaddressed"},
                                  {"item2": "unaddressed"}],
@@ -50,4 +50,4 @@ For `key history`, `risk factors`, and `ddx`, each data point can have one of th
                     "section2": ["item1", "item2"]
                   }
                 }
-}`
+    }
