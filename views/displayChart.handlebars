@@ -1,0 +1,39 @@
+{{# each template.diagnoses}}
+  <h2>{{name}}</h2>
+  <hr>
+
+  <h3>Key History/Exam Items</h3>
+  {{# each key_history}}
+    {{# each section}}
+      <h4>{{name}}</h4>
+      {{# each items}}
+          {{item}}: {{value}}<br>
+      {{/each}}
+    {{/each}}
+  {{/each}}
+
+  <h3>Risk Factors</h3>
+  {{# each risk_factor}}
+    {{# each section}}
+      <h4>{{name}}</h4>
+      {{# each items}}
+        {{item}}: {{value}}<br>
+      {{/each}}
+    {{/each}}
+  {{/each}}
+
+  <h3>Differential Diagnoses</h3>
+  {{# each ddx}}
+    {{item}}: {{value}}<br>
+  {{/each}}
+
+  <h3>Medical Decision Making</h3>
+  {{# each mdm}}
+    {{item}}: {{value}}<br>
+  {{/each}}
+
+  <h3>Resources</h3>
+  {{# each resource}}
+    <a href="{{value}}" target="_blank" rel="noopener noreferrer">{{item}}</a><br>
+  {{/each}}
+{{/each}}

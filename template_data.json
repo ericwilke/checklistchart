@@ -1,0 +1,120 @@
+{ "diagnoses": [
+  {
+    "name": "NAME",
+    "key_history": [
+      {"section": [
+        {"name": "NAME", "items": [
+            {"item": "TEXT", "value": "unaddressed"},
+            {"item": "TEXT", "value": "yes"},
+            {"item": "TEXT", "value": "no"},
+            {"item": "TEXT", "value": "unknown"}
+        ]},
+        {"name": "NAME", "items": [
+          {"item": "TEXT", "value": "unaddressed"}
+        ]}
+      ]}
+    ],
+    "risk_factor": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "ddx": [
+      {"item": "text", "value": "considered and likely"},
+      {"item": "text", "value": "considered but unlikely"},
+      {"item": "text", "value": "unaddressed"}
+    ],
+    "mdm": [
+      {"item": "Long MDM text", "value": "do not include"},
+      {"item": "Long MDM text", "value": "include"}
+    ],
+    "resource": [
+      {"item": "Resource text", "value": "http://mdcalc.com"}
+    ]
+  },
+  {
+    "name": "chest pain",
+    "key_history": [
+      {"section":
+        [
+          {"name": "high risk history", "items": [
+          {"item": "diaphoresis", "value": "unaddressed"},
+          {"item": "pain with radiation", "value": "unaddressed"},
+          {"item": "vomiting", "value": "unaddressed"},
+          {"item": "tearing sensation", "value": "unaddressed"},
+          {"item": "syncope", "value": "unaddressed"},
+          {"item": "pre-hospital aspirin given", "value": "unaddressed"},
+          {"item": "pre-hospital nitro given", "value": "unaddressed"}
+        ]},
+        {"name": "pre-hospital treatment", "items": [
+          {"item": "aspirin", "value": "testValue"},
+          {"item": "nitro", "value": "testValue"}
+        ]}
+      ]}
+    ],
+    "risk_factor": [
+      {
+        "section": [
+          {"name": "CAD risk factors", "items": [
+            {"item": "known CAD", "value": "unaddressed"},
+            {"item": "male gender", "value": "unaddressed"},
+            {"item": "smoker", "value": "unaddressed"},
+            {"item": "hyperlipidemia", "value": "unaddressed"},
+            {"item": "hypertension", "value": "unaddressed"},
+            {"item": "diabetes", "value": "unaddressed"},
+            {"item": "family history", "value": "unaddressed"},
+            {"item": "lupus", "value": "unaddressed"},
+            {"item": "auto-immune disease", "value": "unaddressed"},
+            {"item": "cocaine use", "value": "unaddressed"},
+            {"item": "alcoholism", "value": "unaddressed"},
+            {"item": "HIV", "value": "unaddressed"},
+            {"item": "chronic renal disease", "value": "unaddressed"},
+            {"item": "chemotherapy (recent)", "value": "unaddressed"}
+          ]},
+          {"name": "thoracic aortic dissection risk factors", "items": [
+            {"item": "hypertension", "value": "unaddressed"},
+            {"item": "first degree realtive with TAD", "value": "unaddressed"},
+            {"item": "Turner's Syndrome", "value": "unaddressed"},
+            {"item": "connective tissue disease", "value": "unaddressed"},
+            {"item": "aortic valve disease", "value": "unaddressed"}
+          ]},
+          {"name": "pulmonary embolus risk factors", "items": [
+            {"item": "prior DVT or PE", "value": "unaddressed"},
+            {"item": "malignancy", "value": "unaddressed"},
+            {"item": "pregnancy or post-partum", "value": "unaddressed"},
+            {"item": "immobile", "value": "unaddressed"},
+            {"item": "surgery within last 6 weeks", "value": "unaddressed"},
+            {"item": "hypercoaguable condition", "value": "unaddressed"},
+            {"item": "travel > 1000 km", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "ddx": [
+      {"item": "text", "value": "considered and likely"},
+      {"item": "text", "value": "considered but unlikely"},
+      {"item": "text", "value": "unaddressed"}
+    ],
+    "mdm": [
+      {"item": "Long MDM text", "value": "do not include"},
+      {"item": "Long MDM text", "value": "include"}
+    ],
+    "resource": [
+      {"item": "HEART Pathway for Early Discharge in Acute Chest Pain", "value": "https://www.mdcalc.com/heart-pathway-early-discharge-acute-chest-pain"},
+      {"item": "ACEP Thoracic Aortic Dissection Guideline", "value": "https://www.mdcalc.com/guidelines/acep/thoracic-aortic-dissection"},
+      {"item": "PERC Rule for Pulmonary Embolism", "value": "https://www.mdcalc.com/perc-rule-pulmonary-embolism"},
+      {"item": "Well's Criteria for Pulmonary Embolism", "value": "https://www.mdcalc.com/wells-criteria-pulmonary-embolism"},
+      {"item": "Age-Adjusted D-dimer for VTE", "value": "https://www.mdcalc.com/age-adjusted-d-dimer-venous-thromboembolism-vte"},
+      {"item": "Hestia Criteria for Outpatient Pulmonary Embolism Treatment", "value": "https://www.mdcalc.com/hestia-criteria-outpatient-pulmonary-embolism-treatment"}
+    ]
+  }
+]}

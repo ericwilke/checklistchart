@@ -4,19 +4,19 @@
                     "section1": [{"item1": "unaddressed"},
                                  {"item2": "unaddressed"}],
                     "section2": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
+                                 {"item2": "unaddressed"}]
                   },
                   "risk factors": {
                     "section1": [{"item1": "unaddressed"},
                                  {"item2": "unaddressed"}],
                     "section2": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
+                                 {"item2": "unaddressed"}]
                   },
                   "ddx": {
                     "section1": [{"item1": "unaddressed"},
                                  {"item2": "unaddressed"}],
                     "section2": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
+                                 {"item2": "unaddressed"}]
                   },
                   "suggested work-up": {
                     "section1": ["item1", "item2"],
@@ -94,7 +94,7 @@
                       {"atypical chest pain": "unaddressed"},
                       {"chest wall pain": "unaddressed"},
                       {"cholelithiasis": "unaddressed"},
-                      {"costochondritis": "unaddressed"},
+                      {"costochondritis": "unaddressed"}
                     ]
                   },
                   "suggested work-up": {},
@@ -127,5 +127,5 @@
                   "ddx": {},
                   "suggested work-up": {},
                   "references": {}
-                },
+                }
 }
