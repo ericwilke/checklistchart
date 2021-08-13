@@ -49,11 +49,11 @@
       {"section":
         [
           {"name": "high risk history", "items": [
-          {"item": "diaphoresis", "value": "unaddressed"},
-          {"item": "pain with radiation", "value": "unaddressed"},
-          {"item": "vomiting", "value": "unaddressed"},
-          {"item": "tearing sensation", "value": "unaddressed"},
-          {"item": "syncope", "value": "unaddressed"}
+            {"item": "diaphoresis", "value": "unaddressed"},
+            {"item": "pain with radiation", "value": "unaddressed"},
+            {"item": "vomiting", "value": "unaddressed"},
+            {"item": "tearing sensation", "value": "unaddressed"},
+            {"item": "syncope", "value": "unaddressed"}
         ]},
         {"name": "pre-hospital treatment", "items": [
           {"item": "aspirin", "value": "unaddressed"},
