@@ -2,17 +2,19 @@
   {
     "name": "NAME",
     "key_history": [
-      {"section": [
-        {"name": "NAME", "items": [
-            {"item": "TEXT", "value": "unaddressed"},
-            {"item": "TEXT", "value": "yes"},
-            {"item": "TEXT", "value": "no"},
-            {"item": "TEXT", "value": "unknown"}
-        ]},
-        {"name": "NAME", "items": [
-          {"item": "TEXT", "value": "unaddressed"}
-        ]}
-      ]}
+      {
+        "section": [
+          {"name": "NAME", "items": [
+              {"item": "TEXT", "value": "unaddressed"},
+              {"item": "TEXT", "value": "yes"},
+              {"item": "TEXT", "value": "no"},
+              {"item": "TEXT", "value": "unknown"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "TEXT", "value": "unaddressed"}
+          ]}
+        ]
+      }
     ],
     "risk_factor": [
       {
@@ -51,13 +53,11 @@
           {"item": "pain with radiation", "value": "unaddressed"},
           {"item": "vomiting", "value": "unaddressed"},
           {"item": "tearing sensation", "value": "unaddressed"},
-          {"item": "syncope", "value": "unaddressed"},
-          {"item": "pre-hospital aspirin given", "value": "unaddressed"},
-          {"item": "pre-hospital nitro given", "value": "unaddressed"}
+          {"item": "syncope", "value": "unaddressed"}
         ]},
         {"name": "pre-hospital treatment", "items": [
-          {"item": "aspirin", "value": "testValue"},
-          {"item": "nitro", "value": "testValue"}
+          {"item": "aspirin", "value": "unaddressed"},
+          {"item": "nitro", "value": "unaddressed"}
         ]}
       ]}
     ],
@@ -100,12 +100,25 @@
       }
     ],
     "ddx": [
-      {"item": "text", "value": "considered and likely"},
-      {"item": "text", "value": "considered but unlikely"},
-      {"item": "text", "value": "unaddressed"}
+      {"item": "ACS/AMI", "value": "considered and likely"},
+      {"item": "aneurysm", "value": "considered but unlikely"},
+      {"item": "aortic stenosis", "value": "unaddressed"},
+      {"item": "atypical chest pain", "value": "unaddressed"},
+      {"item": "chest wall pain", "value": "unaddressed"},
+      {"item": "cholecystitis", "value": "unaddressed"},
+      {"item": "cholelithiasis", "value": "unaddressed"},
+      {"item": "costochondritis", "value": "unaddressed"},
+      {"item": "dissection", "value": "unaddressed"},
+      {"item": "esophageal rupture", "value": "unaddressed"},
+      {"item": "myocarditis", "value": "unaddressed"},
+      {"item": "pancreatitis", "value": "unaddressed"},
+      {"item": "pericarditis", "value": "unaddressed"},
+      {"item": "pneumonia", "value": "unaddressed"},
+      {"item": "pneumothorax", "value": "unaddressed"},
+      {"item": "pulmonary embolus", "value": "unaddressed"}
     ],
     "mdm": [
-      {"item": "Long MDM text", "value": "do not include"},
+      {"item": "HEART Score is less than 4, and two negative troponins (baseline and 3 hours) have been obtained. 30-day risk of significant adverse cardiac event is less than 1%. Risk assessment was shared with the patient.", "value": "do not include"},
       {"item": "Long MDM text", "value": "include"}
     ],
     "resource": [

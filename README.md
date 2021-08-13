@@ -21,33 +21,49 @@ For `key history`, `risk factors`, and `ddx`, each data point can have one of th
 
 ### Example data format
 
-    {
-        "diagnosis": {
-                  "key history": {
-                    "section1": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
-                    "section2": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
-                  },
-                  "risk factors": {
-                    "section1": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
-                    "section2": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
-                  },
-                  "ddx": {
-                    "section1": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
-                    "section2": [{"item1": "unaddressed"},
-                                 {"item2": "unaddressed"}],
-                  },
-                  "suggested work-up": {
-                    "section1": ["item1", "item2"],
-                    "section2": ["item1", "item2"]
-                  },
-                  "references": {
-                    "section1": ["item1", "item2"],
-                    "section2": ["item1", "item2"]
-                  }
-                }
+    { "diagnoses": [
+      {
+        "name": "NAME",
+        "key_history": [
+          {
+            "section": [
+              {"name": "NAME", "items": [
+                  {"item": "TEXT", "value": "unaddressed"},
+                  {"item": "TEXT", "value": "yes"},
+                  {"item": "TEXT", "value": "no"},
+                  {"item": "TEXT", "value": "unknown"}
+              ]},
+              {"name": "NAME", "items": [
+                {"item": "TEXT", "value": "unaddressed"}
+              ]}
+            ]
+          }
+        ],
+        "risk_factor": [
+          {
+            "section": [
+              {"name": "NAME", "items": [
+                {"item": "text", "value": "unaddressed"},
+                {"item": "text", "value": "unaddressed"}
+              ]},
+              {"name": "NAME", "items": [
+                {"item": "text", "value": "unaddressed"},
+                {"item": "text", "value": "unaddressed"}
+              ]}
+            ]
+          }
+        ],
+        "ddx": [
+          {"item": "text", "value": "considered and likely"},
+          {"item": "text", "value": "considered but unlikely"},
+          {"item": "text", "value": "unaddressed"}
+        ],
+        "mdm": [
+          {"item": "Long MDM text", "value": "do not include"},
+          {"item": "Long MDM text", "value": "include"}
+        ],
+        "resource": [
+          {"item": "Resource text", "value": "http://mdcalc.com"}
+        ]
+      }
     }

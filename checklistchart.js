@@ -21,8 +21,8 @@ app.get('/', (req,res) => {
 })
 
 app.get('/chestpain', (req,res) => {
-	const chart = "chest pain"
-	res.render('displayChart', {template: TEMPLATES})
+	// the "chest pain" chart is TEMPLATES.diagnoses[1]
+	res.render('displayChart', {template: TEMPLATES.diagnoses[1]})
 })
 
 app.listen(port, () => console.log(

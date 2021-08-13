@@ -1,39 +1,105 @@
-{{# each template.diagnoses}}
-  <h2>{{name}}</h2>
+
+  <h2>{{template.name}}</h2>
   <hr>
 
   <h3>Key History/Exam Items</h3>
-  {{# each key_history}}
+  {{# each template.key_history}}
     {{# each section}}
       <h4>{{name}}</h4>
+      <table class="table table-striped" style="width:700px;">
       {{# each items}}
-          {{item}}: {{value}}<br>
+        <tr>
+          <td width="70%">{{item}} ({{value}})</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-1" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="{{item}}-btn-1">X</label>
+
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-2">Yes</label>
+
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-3" autocomplete="off">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-3">No</label>
+
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-4" autocomplete="off">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-4">Unk</label>
+            </div>
+          </td>
+        </tr>
       {{/each}}
+    </table>
     {{/each}}
   {{/each}}
 
   <h3>Risk Factors</h3>
-  {{# each risk_factor}}
+  {{# each temaplte.risk_factor}}
     {{# each section}}
       <h4>{{name}}</h4>
+      <table class="table table-striped" style="width:700px;">
       {{# each items}}
-        {{item}}: {{value}}<br>
+        <tr>
+          <td width="70%">{{item}} ({{value}})</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-1" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="{{item}}-btn-1">X</label>
+
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-2">Yes</label>
+
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-3" autocomplete="off">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-3">No</label>
+
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-4" autocomplete="off">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-4">Unk</label>
+            </div>
+          </td>
+        </tr>
       {{/each}}
+    </table>
     {{/each}}
   {{/each}}
 
   <h3>Differential Diagnoses</h3>
-  {{# each ddx}}
-    {{item}}: {{value}}<br>
+  <table class="table table-striped" style="width:700px;">
+  {{# each template.ddx}}
+    <tr>
+      <td width="60%">{{item}} ({{value}})</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="{{item}}-btn-1">X</label>
+
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="{{item}}-btn-2">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="{{item}}-btn-3">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
   {{/each}}
+  </table>
 
   <h3>Medical Decision Making</h3>
-  {{# each mdm}}
-    {{item}}: {{value}}<br>
+  <table class="table table-striped" style="width:700px;">
+  {{# each template.mdm}}
+    <tr>
+      <td width="70%">{{item}} ({{value}})</td>
+      <td width="30%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="{{item}}-btn-1">do not include</label>
+
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="{{item}}-btn-2">include</label>
+        </div>
+      </td>
+    </tr>
   {{/each}}
+  </table>
 
   <h3>Resources</h3>
-  {{# each resource}}
+  {{# each template.resource}}
     <a href="{{value}}" target="_blank" rel="noopener noreferrer">{{item}}</a><br>
   {{/each}}
-{{/each}}
