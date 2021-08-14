@@ -118,8 +118,8 @@
       {"item": "pulmonary embolus", "value": "unaddressed"}
     ],
     "mdm": [
-      {"item": "HEART Score is less than 4, and two negative troponins (baseline and 3 hours) have been obtained. 30-day risk of significant adverse cardiac event is less than 1%. Risk assessment was shared with the patient.", "value": "do not include"},
-      {"item": "Long MDM text", "value": "include"}
+      {"item": "HEART scoore", "text": "HEART Score is less than 4, and two negative troponins (baseline and 3 hours) have been obtained. 30-day risk of significant adverse cardiac event is less than 1%. Risk assessment was shared with the patient.", "value": "do not include"},
+      {"item": "MDM item", "text": "Long MDM text", "value": "include"}
     ],
     "resource": [
       {"item": "HEART Pathway for Early Discharge in Acute Chest Pain", "value": "https://www.mdcalc.com/heart-pathway-early-discharge-acute-chest-pain"},

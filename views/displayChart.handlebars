@@ -12,17 +12,17 @@
           <td width="70%">{{item}} ({{value}})</td>
           <td width="30%">
             <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
-              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-1" autocomplete="off" checked>
-              <label class="btn btn-outline-primary" for="{{item}}-btn-1">X</label>
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-unaddressed">X</label>
 
-              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-2" autocomplete="off">
-              <label class="btn btn-outline-primary" for="{{item}}-btn-2">Yes</label>
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-yes">Yes</label>
 
-              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-3" autocomplete="off">
-              <label class="btn btn-outline-primary" for="{{item}}-btn-3">No</label>
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-no">No</label>
 
-              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-4" autocomplete="off">
-              <label class="btn btn-outline-primary" for="{{item}}-btn-4">Unk</label>
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-unknown">Unk</label>
             </div>
           </td>
         </tr>
@@ -41,17 +41,17 @@
           <td width="70%">{{item}} ({{value}})</td>
           <td width="30%">
             <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
-              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-1" autocomplete="off" checked>
-              <label class="btn btn-outline-primary" for="{{item}}-btn-1">X</label>
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-unaddressed">X</label>
 
-              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-2" autocomplete="off">
-              <label class="btn btn-outline-primary" for="{{item}}-btn-2">Yes</label>
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-yes">Yes</label>
 
-              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-3" autocomplete="off">
-              <label class="btn btn-outline-primary" for="{{item}}-btn-3">No</label>
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-no">No</label>
 
-              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-4" autocomplete="off">
-              <label class="btn btn-outline-primary" for="{{item}}-btn-4">Unk</label>
+              <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="{{item}}-btn-unknown">Unk</label>
             </div>
           </td>
         </tr>
@@ -67,14 +67,14 @@
       <td width="60%">{{item}} ({{value}})</td>
       <td width="40%">
         <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-1" autocomplete="off" checked>
-          <label class="btn btn-outline-primary" for="{{item}}-btn-1">X</label>
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="{{item}}-btn-unaddressed">X</label>
 
-          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-2" autocomplete="off">
-          <label class="btn btn-outline-primary" for="{{item}}-btn-2">considered and likely</label>
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="{{item}}-btn-likely">considered and likely</label>
 
-          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-3" autocomplete="off">
-          <label class="btn btn-outline-primary" for="{{item}}-btn-3">considered but unlikely</label>
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-unlikely" autocomplete="off" value="unlikely">
+          <label class="btn btn-outline-primary" for="{{item}}-btn-unlikely">considered but unlikely</label>
         </div>
       </td>
     </tr>
@@ -85,14 +85,14 @@
   <table class="table table-striped" style="width:700px;">
   {{# each template.mdm}}
     <tr>
-      <td width="70%">{{item}} ({{value}})</td>
+      <td width="70%">{{text}} ({{value}})</td>
       <td width="30%">
         <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-1" autocomplete="off" checked>
-          <label class="btn btn-outline-primary" for="{{item}}-btn-1">do not include</label>
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-do_not_include" autocomplete="off" checked value="do not include">
+          <label class="btn btn-outline-primary" for="{{item}}-btn-do_not_include">do not include</label>
 
-          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-2" autocomplete="off">
-          <label class="btn btn-outline-primary" for="{{item}}-btn-2">include</label>
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-include" autocomplete="off" value="include">
+          <label class="btn btn-outline-primary" for="{{item}}-btn-include">include</label>
         </div>
       </td>
     </tr>
@@ -103,3 +103,20 @@
   {{# each template.resource}}
     <a href="{{value}}" target="_blank" rel="noopener noreferrer">{{item}}</a><br>
   {{/each}}
+
+  <hr>
+
+  <span name="chartOutput" id="chartOutput"></span>
+
+  <script>
+    //setInterval(function() {
+    //  console.log(document.querySelector('input[name="diaphoresis-btn"]:checked').value)
+    //}, 3000)
+    document.onclick = buildChart
+
+    function buildChart(){
+      console.log("Bulding chart for: {{template.name}}")
+      chartHTML = "<h3>Should be building chart...</h3>"
+      document.getElementById("chartOutput").innerHTML = chartHTML
+    }
+  </script>
