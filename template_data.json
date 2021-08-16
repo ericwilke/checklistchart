@@ -129,5 +129,305 @@
       {"item": "Age-Adjusted D-dimer for VTE", "value": "https://www.mdcalc.com/age-adjusted-d-dimer-venous-thromboembolism-vte"},
       {"item": "Hestia Criteria for Outpatient Pulmonary Embolism Treatment", "value": "https://www.mdcalc.com/hestia-criteria-outpatient-pulmonary-embolism-treatment"}
     ]
+  },
+  {
+    "name": "abdominal pain",
+    "key_history": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+              {"item": "TEXT", "value": "unaddressed"},
+              {"item": "TEXT", "value": "yes"},
+              {"item": "TEXT", "value": "no"},
+              {"item": "TEXT", "value": "unknown"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "TEXT", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "risk_factor": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "ddx": [
+      {"item": "text", "value": "considered and likely"},
+      {"item": "text", "value": "considered but unlikely"},
+      {"item": "text", "value": "unaddressed"}
+    ],
+    "mdm": [
+      {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
+      {"item": "itemName", "text": "Extra long MDM text", "value": "include"}
+    ],
+    "resource": [
+      {"item": "Resource text", "value": "http://mdcalc.com"}
+    ]
+  },
+  {
+    "name": "back pain",
+    "key_history": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+              {"item": "TEXT", "value": "unaddressed"},
+              {"item": "TEXT", "value": "yes"},
+              {"item": "TEXT", "value": "no"},
+              {"item": "TEXT", "value": "unknown"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "TEXT", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "risk_factor": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "ddx": [
+      {"item": "text", "value": "considered and likely"},
+      {"item": "text", "value": "considered but unlikely"},
+      {"item": "text", "value": "unaddressed"}
+    ],
+    "mdm": [
+      {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
+      {"item": "itemName", "text": "Extra long MDM text", "value": "include"}
+    ],
+    "resource": [
+      {"item": "Resource text", "value": "http://mdcalc.com"}
+    ]
+  },
+  {
+    "name": "back pain DUPLICATE",
+    "key_history": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+              {"item": "TEXT", "value": "unaddressed"},
+              {"item": "TEXT", "value": "yes"},
+              {"item": "TEXT", "value": "no"},
+              {"item": "TEXT", "value": "unknown"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "TEXT", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "risk_factor": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "ddx": [
+      {"item": "text", "value": "considered and likely"},
+      {"item": "text", "value": "considered but unlikely"},
+      {"item": "text", "value": "unaddressed"}
+    ],
+    "mdm": [
+      {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
+      {"item": "itemName", "text": "Extra long MDM text", "value": "include"}
+    ],
+    "resource": [
+      {"item": "Resource text", "value": "http://mdcalc.com"}
+    ]
+  },
+  {
+    "name": "vertigo or syncope",
+    "key_history": [
+      {
+        "section": [
+          {"name": "key history", "items": [
+              {"item": "loss of consciousness", "value": "unaddressed"},
+              {"item": "loss of postural tone", "value": "unaddressed"},
+              {"item": "seizure-like movements", "value": "unaddressed"},
+              {"item": "sensation of movement", "value": "unaddressed"},
+              {"item": "lightheadedness", "value": "unaddressed"},
+              {"item": "balance off", "value": "unaddressed"}
+          ]},
+          {"name": "high risk features", "items": [
+            {"item": "male gender", "value": "unaddressed"},
+            {"item": "age > 60", "value": "unaddressed"},
+            {"item": "exertional onset", "value": "unaddressed"},
+            {"item": "chest pain", "value": "unaddressed"},
+            {"item": "severe headache", "value": "unaddressed"},
+            {"item": "dyspnea", "value": "unaddressed"},
+            {"item": "abdominal pain", "value": "unaddressed"},
+            {"item": "supine onset", "value": "unaddressed"},
+            {"item": "palpitations", "value": "unaddressed"},
+            {"item": "no prodrome", "value": "unaddressed"},
+            {"item": "black/tarry stools", "value": "unaddressed"},
+            {"item": "structural heart disease", "value": "unaddressed"},
+            {"item": "heart failure", "value": "unaddressed"},
+            {"item": "crebrovascular disease", "value": "unaddressed"},
+            {"item": "family history of sudden death", "value": "unaddressed"},
+            {"item": "persistent abnormal vital signs", "value": "unaddressed"},
+            {"item": "positive troponin", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "risk_factor": [
+      {
+        "section": [
+          {"name": "CAD risk factors", "items": [
+            {"item": "known CAD", "value": "unaddressed"},
+            {"item": "male gender", "value": "unaddressed"},
+            {"item": "smoker", "value": "unaddressed"},
+            {"item": "hyperlipidemia", "value": "unaddressed"},
+            {"item": "hypertension", "value": "unaddressed"},
+            {"item": "diabetes", "value": "unaddressed"},
+            {"item": "family history", "value": "unaddressed"},
+            {"item": "lupus", "value": "unaddressed"},
+            {"item": "auto-immune disease", "value": "unaddressed"},
+            {"item": "cocaine use", "value": "unaddressed"},
+            {"item": "alcoholism", "value": "unaddressed"},
+            {"item": "HIV", "value": "unaddressed"},
+            {"item": "chronic renal disease", "value": "unaddressed"},
+            {"item": "chemotherapy (recent)", "value": "unaddressed"}
+          ]},
+          {"name": "pulmonary embolus risk factors", "items": [
+            {"item": "prior DVT or PE", "value": "unaddressed"},
+            {"item": "malignancy", "value": "unaddressed"},
+            {"item": "pregnancy or post-partum", "value": "unaddressed"},
+            {"item": "immobile", "value": "unaddressed"},
+            {"item": "surgery within last 6 weeks", "value": "unaddressed"},
+            {"item": "hypercoaguable condition", "value": "unaddressed"},
+            {"item": "travel > 1000 km", "value": "unaddressed"}
+          ]},
+          {"name": "ACEP and ROSE admission requirements (any one)", "items": [
+            {"item": "older age and associated comorbidities", "value": "unaddressed"},
+            {"item": "abnormal ECG findings", "value": "unaddressed"},
+            {"item": "history of CHF, CAD, structural heart disease", "value": "unaddressed"},
+            {"item": "BNP ≥ 300", "value": "unaddressed"},
+            {"item": "bradycardia ≤ 50 bpm", "value": "unaddressed"},
+            {"item": "positive fecal occult blood", "value": "unaddressed"},
+            {"item": "hemoglobin ≤ 9 g/dL", "value": "unaddressed"},
+            {"item": "chest pain with syncope", "value": "unaddressed"},
+            {"item": "O2 sat ≤ 94% on room air", "value": "unaddressed"},
+            {"item": "Q wave on ECG (no in lead III)", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "ddx": [
+      {"item": "acoustic neuroma", "value": "unaddressed"},
+      {"item": "acute vistibular synfomes", "value": "unaddressed"},
+      {"item": "anemia", "value": "unaddressed"},
+      {"item": "aortic stenosis", "value": "unaddressed"},
+      {"item": "arrhythmia", "value": "unaddressed"},
+      {"item": "B12 deficiency", "value": "unaddressed"},
+      {"item": "benign positional vertigo", "value": "unaddressed"},
+      {"item": "bradycardia", "value": "unaddressed"},
+      {"item": "brain tumor", "value": "unaddressed"},
+      {"item": "Brugada syndrome", "value": "unaddressed"},
+      {"item": "cardiomyopathy", "value": "unaddressed"},
+      {"item": "carotid sinus syndrome", "value": "unaddressed"},
+      {"item": "crebral bleed", "value": "unaddressed"},
+      {"item": "crebral ischemia/infarct", "value": "unaddressed"},
+      {"item": "crebrovascular disorder", "value": "unaddressed"},
+      {"item": "heavy metal toxicity", "value": "unaddressed"},
+      {"item": "hyperventilation", "value": "unaddressed"},
+      {"item": "hypoglycemia", "value": "unaddressed"},
+      {"item": "hypotension", "value": "unaddressed"},
+      {"item": "hypoxia", "value": "unaddressed"},
+      {"item": "idiopathic syncope", "value": "unaddressed"},
+      {"item": "labrynthitis", "value": "unaddressed"},
+      {"item": "long or short QT syndromes", "value": "unaddressed"},
+      {"item": "mitral stenosis", "value": "unaddressed"},
+      {"item": "multiple sclerosis", "value": "unaddressed"},
+      {"item": "myocardial infarction", "value": "unaddressed"},
+      {"item": "orthostatic syncope", "value": "unaddressed"},
+      {"item": "ototoxic medications", "value": "unaddressed"},
+      {"item": "pericardial tamponade", "value": "unaddressed"},
+      {"item": "pre-excitation syndromes (WPW, LGL)", "value": "unaddressed"},
+      {"item": "psychogenic", "value": "unaddressed"},
+      {"item": "pulmonary embolus", "value": "unaddressed"},
+      {"item": "pulmonary hypertension", "value": "unaddressed"},
+      {"item": "sepsis", "value": "unaddressed"},
+      {"item": "tachycardia", "value": "unaddressed"},
+      {"item": "vasovagal (neurogenic) syncope", "value": "unaddressed"}
+    ],
+    "mdm": [
+      {"item": "no arrhythmia", "text": "I think arrhythmia is unlikely. ECG shows normal sinus rhythm with no interval abnormalities such as QT prolongation or WPW. There are no findings to suggest Brugada syndrome. Cardiac monitoring in the emergency department revealed no tachycardic or bradycardic dysrhythmia. Hypertrophic cardiomyopathy was considered but there are no clear historical elements pointing towards this -- EKG is not suggestive, QRS voltage is not extremely large and there are no suggestive Q-waves.", "value": "do not include"}
+    ],
+    "resource": [
+      {"item": "Canadian Syncope Risk Score", "value": "https://www.mdcalc.com/canadian-syncope-risk-score"},
+      {"item": "EGSYS (Evaluation of Guidelines in SYncope Study) Score for Syncope", "value": "https://www.mdcalc.com/egsys-evaluation-guidelines-syncope-study-score-syncope"}
+    ]
+  },
+  {
+    "name": "headache",
+    "key_history": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+              {"item": "TEXT", "value": "unaddressed"},
+              {"item": "TEXT", "value": "yes"},
+              {"item": "TEXT", "value": "no"},
+              {"item": "TEXT", "value": "unknown"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "TEXT", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "risk_factor": [
+      {
+        "section": [
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]},
+          {"name": "NAME", "items": [
+            {"item": "text", "value": "unaddressed"},
+            {"item": "text", "value": "unaddressed"}
+          ]}
+        ]
+      }
+    ],
+    "ddx": [
+      {"item": "text", "value": "considered and likely"},
+      {"item": "text", "value": "considered but unlikely"},
+      {"item": "text", "value": "unaddressed"}
+    ],
+    "mdm": [
+      {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
+      {"item": "itemName", "text": "Extra long MDM text", "value": "include"}
+    ],
+    "resource": [
+      {"item": "Resource text", "value": "http://mdcalc.com"}
+    ]
   }
 ]}

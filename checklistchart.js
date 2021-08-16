@@ -29,8 +29,28 @@ app.get('/', (req,res) => {
 
 app.get('/chestpain', (req,res) => {
 	// the "chest pain" chart is TEMPLATES.diagnoses[1]
+	index = 0
+	for (i=0; i < TEMPLATES.diagnoses.length; i++) {
+		if (TEMPLATES.diagnoses[i].name == "chest pain") {
+			index = i
+		}
+	}
 	res.render('displayChart', {
-		template: TEMPLATES.diagnoses[1]
+		template: TEMPLATES.diagnoses[index]
+		}
+	)
+})
+
+app.get('/vertigo-syncope', (req,res) => {
+	// the "chest pain" chart is TEMPLATES.diagnoses[1]
+	index = 0
+	for (i=0; i < TEMPLATES.diagnoses.length; i++) {
+		if (TEMPLATES.diagnoses[i].name == "vertigo or syncope") {
+			index = i
+		}
+	}
+	res.render('displayChart', {
+		template: TEMPLATES.diagnoses[index]
 		}
 	)
 })
