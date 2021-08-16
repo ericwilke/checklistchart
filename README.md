@@ -78,3 +78,7 @@ For `mdm` each data item can have one of the following states:
         ]
       }
     }
+
+## Static Files for Market Research
+
+[Vertigo or Syncope](https://ericwilke.github.io/checklistchart/static/checklist-chart-vertigo-syncope.html)
