@@ -81,4 +81,6 @@ For `mdm` each data item can have one of the following states:
 
 ## Static Files for Market Research
 
+[Chest Pain](https://ericwilke.github.io/checklistchart/static/checklist-chart-chest-pain.html)
+
 [Vertigo or Syncope](https://ericwilke.github.io/checklistchart/static/checklist-chart-vertigo-syncope.html)
