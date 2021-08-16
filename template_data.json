@@ -36,8 +36,8 @@
       {"item": "text", "value": "unaddressed"}
     ],
     "mdm": [
-      {"item": "Long MDM text", "value": "do not include"},
-      {"item": "Long MDM text", "value": "include"}
+      {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
+      {"item": "itemName", "text": "Extra long MDM text", "value": "include"}
     ],
     "resource": [
       {"item": "Resource text", "value": "http://mdcalc.com"}
@@ -83,7 +83,7 @@
           {"name": "thoracic aortic dissection risk factors", "items": [
             {"item": "hypertension", "value": "unaddressed"},
             {"item": "first degree realtive with TAD", "value": "unaddressed"},
-            {"item": "Turner's Syndrome", "value": "unaddressed"},
+            {"item": "Turners Syndrome", "value": "unaddressed"},
             {"item": "connective tissue disease", "value": "unaddressed"},
             {"item": "aortic valve disease", "value": "unaddressed"}
           ]},

@@ -1,3 +1,10 @@
+<!--
+To Do:
+
+  - consider splitting the TEMPLATES file into individual files
+  - need to build system to hold data
+
+-->
 
   <h2>{{template.name}}</h2>
   <hr>
@@ -73,7 +80,7 @@
           <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-likely" autocomplete="off" value="considered and likely">
           <label class="btn btn-outline-primary" for="{{item}}-btn-likely">considered and likely</label>
 
-          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-unlikely" autocomplete="off" value="unlikely">
+          <input type="radio" class="btn-check" name="{{item}}-btn" id="{{item}}-btn-unlikely" autocomplete="off" value="considered but unlikely">
           <label class="btn btn-outline-primary" for="{{item}}-btn-unlikely">considered but unlikely</label>
         </div>
       </td>
@@ -110,7 +117,7 @@
 
   <script>
     // How to get the value of a radio group:
-    //  console.log(document.querySelector('input[name="diaphoresis-btn"]:checked').value)
+    //  console.log(document.querySelector('input[name= chartData.diagnoses[i].key_history[0].section[k].items[j].item + "-btn"]:checked').value)
 
     // obtain and decode encoded JSON from the helper function getJSONData
     const chartRawData = decodeURIComponent("{{{getJSONData}}}")
@@ -121,9 +128,129 @@
     document.onclick = buildChart
 
     function buildChart(){
-      console.log("Bulding chart for: {{template.name}}")
-      chartHTML = "<h3>Should be building chart...</h3>" + JSON.stringify(chartData.diagnoses[1])
+      chartHTML = "<h3>{{template.name}} chart data</h3>"
+      chartHTML += "<button type='button' id='copyButton' class='btn btn-secondary' onclick='copyToClipboard()'>Copy Chart</button><br><br>"
+      positiveItems = ""
+      negativeItems = ""
+      unknownItems = ""
+      for (i=0; i < (chartData.diagnoses).length; i++) {
+        if (chartData.diagnoses[i].name === "{{template.name}}") {
+          // found the chart to parse
+          for (k=0; k < (chartData.diagnoses[i].key_history[0].section).length; k++) {
+            positiveItems = "The <b>" + chartData.diagnoses[i].key_history[0].section[k].name + "</b> items that are positive include: <ul>"
+            negativeItems = "The <b>" + chartData.diagnoses[i].key_history[0].section[k].name + "</b> items that are negative include: <ul>"
+            unknownItems = "The <b>" + chartData.diagnoses[i].key_history[0].section[k].name + "</b> items that are unknown by the patient include: <ul>"
+            includePositiveItems = false
+            includeNegativeItems = false
+            includeUnknownItems = false
+            for (j=0; j < (chartData.diagnoses[i].key_history[0].section[k].items).length; j++) {
+              itemName = chartData.diagnoses[i].key_history[0].section[k].items[j].item + "-btn"
+              switch(document.querySelector("input[name='"+itemName+"']:checked").value) {
+                case "yes":
+                  positiveItems += "<li>" + chartData.diagnoses[i].key_history[0].section[k].items[j].item + "</li>"
+                  includePositiveItems = true
+                  break
+                case "no":
+                  negativeItems += "<li>" + chartData.diagnoses[i].key_history[0].section[k].items[j].item + "</li>"
+                  includeNegativeItems = true
+                  break
+                case "unknown":
+                  unknownItems += "<li>" + chartData.diagnoses[i].key_history[0].section[k].items[j].item + "</li>"
+                  includeUnknownItems = true
+                  break
+              }
+            }
+            positiveItems += "</ul>"
+            negativeItems += "</ul>"
+            unknownItems += "</ul>"
+            if (includePositiveItems) { chartHTML += positiveItems }
+            if (includeNegativeItems) { chartHTML += negativeItems }
+            if (includeUnknownItems) { chartHTML += unknownItems }
+          } // end of key_history section
+
+          for (k=0; k < (chartData.diagnoses[i].risk_factor[0].section).length; k++) {
+            positiveItems = "The <b>" + chartData.diagnoses[i].risk_factor[0].section[k].name + "</b> items that are positive include: <ul>"
+            negativeItems = "The <b>" + chartData.diagnoses[i].risk_factor[0].section[k].name + "</b> items that are negative include: <ul>"
+            unknownItems = "The <b>" + chartData.diagnoses[i].risk_factor[0].section[k].name + "</b> items that are unknown by the patient include: <ul>"
+            includePositiveItems = false
+            includeNegativeItems = false
+            includeUnknownItems = false
+            for (j=0; j < (chartData.diagnoses[i].risk_factor[0].section[k].items).length; j++) {
+              itemName = chartData.diagnoses[i].risk_factor[0].section[k].items[j].item + "-btn"
+              switch(document.querySelector("input[name='"+itemName+"']:checked").value) {
+                case "yes":
+                  positiveItems += "<li>" + chartData.diagnoses[i].risk_factor[0].section[k].items[j].item + "</li>"
+                  includePositiveItems = true
+                  break
+                case "no":
+                  negativeItems += "<li>" + chartData.diagnoses[i].risk_factor[0].section[k].items[j].item + "</li>"
+                  includeNegativeItems = true
+                  break
+                case "unknown":
+                  unknownItems += "<li>" + chartData.diagnoses[i].risk_factor[0].section[k].items[j].item + "</li>"
+                  includeUnknownItems = true
+                  break
+              }
+            }
+            positiveItems += "</ul>"
+            negativeItems += "</ul>"
+            unknownItems += "</ul>"
+            if (includePositiveItems) { chartHTML += positiveItems }
+            if (includeNegativeItems) { chartHTML += negativeItems }
+            if (includeUnknownItems) { chartHTML += unknownItems }
+          } // end of risk_factor section
+
+          positiveItems = "The <b>differential diagnosis</b> items that have been considered and deemed possible or likely include: <ul>"
+          negativeItems = "The <b>differential diagnosis</b> items that have been considered but deemed unlikely based on history and physical exam include: <ul>"
+          includePositiveItems = false
+          includeNegativeItems = false
+          for (k=0; k < (chartData.diagnoses[i].ddx).length; k++) {
+            itemName = chartData.diagnoses[i].ddx[k].item + "-btn"
+            switch(document.querySelector("input[name='"+itemName+"']:checked").value) {
+              case "considered and likely":
+                positiveItems += "<li>" + chartData.diagnoses[i].ddx[k].item + "</li>"
+                includePositiveItems = true
+                break
+              case "considered but unlikely":
+                negativeItems += "<li>" + chartData.diagnoses[i].ddx[k].item + "</li>"
+                includeNegativeItems = true
+                break
+            }
+          }
+          positiveItems += "</ul>"
+          negativeItems += "</ul>"
+          if (includePositiveItems) { chartHTML += positiveItems }
+          if (includeNegativeItems) { chartHTML += negativeItems }
+          // end of ddx section
+
+          positiveItems = "<b>Medical Decision Making:</b>"
+          includePositiveItems = false
+          for (k=0; k < (chartData.diagnoses[i].mdm).length; k++) {
+            itemName = chartData.diagnoses[i].mdm[k].item + "-btn"
+            console.log(document.querySelector("input[name='"+itemName+"']:checked").value)
+            switch(document.querySelector("input[name='"+itemName+"']:checked").value) {
+              case "include":
+                positiveItems += "<br>" + chartData.diagnoses[i].mdm[k].text + "<br>"
+                includePositiveItems = true
+                break
+            }
+          }
+          if (includePositiveItems) { chartHTML += positiveItems }
+          // end of mdm section
+
+        } // end building of chart
+      }
       document.getElementById("chartOutput").innerHTML = chartHTML
 
+    }
+
+    function copyToClipboard() {
+      let r = document.createRange()
+      document.getElementById("copyButton").remove()
+      r.selectNode(document.getElementById("chartOutput"))
+      window.getSelection().removeAllRanges()
+      window.getSelection().addRange(r)
+      document.execCommand('copy')
+      window.getSelection().removeAllRanges()
     }
   </script>

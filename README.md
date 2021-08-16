@@ -12,12 +12,23 @@ For each `chief complaint` the json data file contains the following sections:
 - suggested work-up
 - references
 
-For `key history`, `risk factors`, and `ddx`, each data point can have one of the following states:
+For `key history` and `risk factors` each data point can have one of the following states:
 
 - unaddressed (the patient has not been asked the question)
 - yes (positive answer)
 - no (negative answer)
 - unknown (the patient is unsure of the correct answer)
+
+For `ddx` each data item can have one of the following states:
+
+- unaddressed
+- considered and likely
+- considered but unlikely
+
+For `mdm` each data item can have one of the following states:
+
+- do not include
+- include
 
 ### Example data format
 
@@ -59,8 +70,8 @@ For `key history`, `risk factors`, and `ddx`, each data point can have one of th
           {"item": "text", "value": "unaddressed"}
         ],
         "mdm": [
-          {"item": "Long MDM text", "value": "do not include"},
-          {"item": "Long MDM text", "value": "include"}
+          {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
+          {"item": "itemName", "text": "Extra long MDM text", "value": "include"}
         ],
         "resource": [
           {"item": "Resource text", "value": "http://mdcalc.com"}
