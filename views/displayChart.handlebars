@@ -109,14 +109,21 @@
   <span name="chartOutput" id="chartOutput"></span>
 
   <script>
-    //setInterval(function() {
+    // How to get the value of a radio group:
     //  console.log(document.querySelector('input[name="diaphoresis-btn"]:checked').value)
-    //}, 3000)
+
+    // obtain and decode encoded JSON from the helper function getJSONData
+    const chartRawData = decodeURIComponent("{{{getJSONData}}}")
+    // parse raw data into JSON format
+    const chartData = JSON.parse(chartRawData)
+
+
     document.onclick = buildChart
 
     function buildChart(){
       console.log("Bulding chart for: {{template.name}}")
-      chartHTML = "<h3>Should be building chart...</h3>"
+      chartHTML = "<h3>Should be building chart...</h3>" + JSON.stringify(chartData.diagnoses[1])
       document.getElementById("chartOutput").innerHTML = chartHTML
+
     }
   </script>
