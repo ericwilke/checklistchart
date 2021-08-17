@@ -83,4 +83,6 @@ For `mdm` each data item can have one of the following states:
 
 [Chest Pain](https://ericwilke.github.io/checklistchart/static/checklist-chart-chest-pain.html)
 
+[Headache](https://ericwilke.github.io/checklistchart/static/checklist-chart-headache.html)
+
 [Vertigo or Syncope](https://ericwilke.github.io/checklistchart/static/checklist-chart-vertigo-syncope.html)

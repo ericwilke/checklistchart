@@ -55,6 +55,20 @@ app.get('/vertigo-syncope', (req,res) => {
 	)
 })
 
+app.get('/headache', (req,res) => {
+	// the "chest pain" chart is TEMPLATES.diagnoses[1]
+	index = 0
+	for (i=0; i < TEMPLATES.diagnoses.length; i++) {
+		if (TEMPLATES.diagnoses[i].name == "headache") {
+			index = i
+		}
+	}
+	res.render('displayChart', {
+		template: TEMPLATES.diagnoses[index]
+		}
+	)
+})
+
 app.listen(port, () => console.log(
 	`Express started on http://143.244.178.90:${port}; press Ctrl-C to terminate.`
 	)

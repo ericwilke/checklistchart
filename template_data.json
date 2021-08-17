@@ -391,14 +391,21 @@
     "key_history": [
       {
         "section": [
-          {"name": "NAME", "items": [
-              {"item": "TEXT", "value": "unaddressed"},
-              {"item": "TEXT", "value": "yes"},
-              {"item": "TEXT", "value": "no"},
-              {"item": "TEXT", "value": "unknown"}
-          ]},
-          {"name": "NAME", "items": [
-            {"item": "TEXT", "value": "unaddressed"}
+          {"name": "high risk features", "items": [
+              {"item": "new onset", "value": "unaddressed"},
+              {"item": "neurologic findings", "value": "unaddressed"},
+              {"item": "sudden onset", "value": "unaddressed"},
+              {"item": "worse at onset", "value": "unaddressed"},
+              {"item": "fever/immunocompromised", "value": "unaddressed"},
+              {"item": "elderly", "value": "unaddressed"},
+              {"item": "progressive headache", "value": "unaddressed"},
+              {"item": "jaw/temple pain", "value": "unaddressed"},
+              {"item": "multiple patients with headache (CO exposure)", "value": "unaddressed"},
+              {"item": "pregnant/peripartum", "value": "unaddressed"},
+              {"item": "clotting disease", "value": "unaddressed"},
+              {"item": "trauma", "value": "unaddressed"},
+              {"item": "cervical manipulation", "value": "unaddressed"},
+              {"item": "dizzy with headache", "value": "unaddressed"}
           ]}
         ]
       }
@@ -406,28 +413,49 @@
     "risk_factor": [
       {
         "section": [
-          {"name": "NAME", "items": [
-            {"item": "text", "value": "unaddressed"},
-            {"item": "text", "value": "unaddressed"}
-          ]},
-          {"name": "NAME", "items": [
-            {"item": "text", "value": "unaddressed"},
-            {"item": "text", "value": "unaddressed"}
+          {"name": "Ottawa SHA Rule", "items": [
+            {"item": "age > 40 years", "value": "unaddressed"},
+            {"item": "neck pain/stiffness", "value": "unaddressed"},
+            {"item": "witnessed loss of consciousness", "value": "unaddressed"},
+            {"item": "thunderclap onset", "value": "unaddressed"},
+            {"item": "exertional onset", "value": "unaddressed"},
+            {"item": "limited neck flexion", "value": "unaddressed"}
           ]}
         ]
       }
     ],
     "ddx": [
-      {"item": "text", "value": "considered and likely"},
-      {"item": "text", "value": "considered but unlikely"},
-      {"item": "text", "value": "unaddressed"}
+      {"item": "brain abscess", "value": "unaddressed"},
+      {"item": "carotid/vertebral dissection", "value": "unaddressed"},
+      {"item": "cavernous sinus thrombosis", "value": "unaddressed"},
+      {"item": "central dural vein thrombosis", "value": "unaddressed"},
+      {"item": "cluster headache", "value": "unaddressed"},
+      {"item": "CO poisoning", "value": "unaddressed"},
+      {"item": "encephalitis", "value": "unaddressed"},
+      {"item": "epidural hemorrhage", "value": "unaddressed"},
+      {"item": "giant cell arteritis", "value": "unaddressed"},
+      {"item": "glaucoma", "value": "unaddressed"},
+      {"item": "headache (non-specified)", "value": "unaddressed"},
+      {"item": "idopathic intracranial hypertension", "value": "unaddressed"},
+      {"item": "increased intracranial pressure", "value": "unaddressed"},
+      {"item": "intercerebral hemorrhage", "value": "unaddressed"},
+      {"item": "meningitis", "value": "unaddressed"},
+      {"item": "migrane", "value": "unaddressed"},
+      {"item": "neoplasm", "value": "unaddressed"},
+      {"item": "pituitary apoplexy", "value": "unaddressed"},
+      {"item": "pre-eclampsia", "value": "unaddressed"},
+      {"item": "subarachnoid hemorrhage", "value": "unaddressed"},
+      {"item": "subdural hemorrhage", "value": "unaddressed"},
+      {"item": "tension headache", "value": "unaddressed"}
     ],
     "mdm": [
-      {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
-      {"item": "itemName", "text": "Extra long MDM text", "value": "include"}
+      {"item": "SAH-mdm", "text": "Over 90% of patients with subarachnoid hemorrhage will report a sudden, sever headache, and 30% of the time the headache will lateralize to the side of the head.", "value": "do not include"},
+      {"item": "meningitis-mdm", "text": "Fever, neck pain, or altered mental status is present in 99-100% of patients with meningitis; therefore, the absence of all three of these symptoms or exam findings is reassuring.", "value": "include"}
     ],
     "resource": [
-      {"item": "Resource text", "value": "http://mdcalc.com"}
+      {"item": "migraine cocktail", "value": "Migrain Cocktail: acetaminophen 650 mg PO, diphenhyramine 25 mg IV, 0.9% NS 1 L bolus IV, prochlorperazine 10 mg IV over 15 min, dexamethasone 10 mg IV, ketorolac 10 mg IV"},
+      {"item": "ACEP headache guideline", "value": "https://www.mdcalc.com/guidelines/acep/headache"},
+      {"item": "Ottawa SAH rule", "value": "https://www.mdcalc.com/ottawa-subarachnoid-hemorrhage-sah-rule-headache-evaluation"}
     ]
   }
 ]}
