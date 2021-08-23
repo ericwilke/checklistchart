@@ -81,6 +81,10 @@ For `mdm` each data item can have one of the following states:
 
 ## Static Files for Market Research
 
+[Abdominal Pain](https://ericwilke.github.io/checklistchart/static/checklist-chart-abdominal-pain.html)
+
+[Back Pain](https://ericwilke.github.io/checklistchart/static/checklist-chart-back-pain.html)
+
 [Chest Pain](https://ericwilke.github.io/checklistchart/static/checklist-chart-chest-pain.html)
 
 [Headache](https://ericwilke.github.io/checklistchart/static/checklist-chart-headache.html)

@@ -1,0 +1,1129 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Checklist Chart</title>
+  </head>
+  <body>
+    <h3>Chestlist Charting System</h3>
+    <hr>
+    <!--
+To Do:
+
+  - consider splitting the TEMPLATES file into individual files
+  - need to build system to hold data
+
+-->
+
+  <h2>abdominal pain</h2>
+  <hr>
+
+  <h3>Key History/Exam Items</h3>
+      <h4>associated symptoms</h4>
+      <table class="table table-striped" style="width:700px;">
+        <tr>
+          <td width="70%">fever</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="fever-btn" id="fever-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="fever-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="fever-btn" id="fever-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="fever-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="fever-btn" id="fever-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="fever-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="fever-btn" id="fever-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="fever-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">nausea/vomiting</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="nausea/vomiting-btn" id="nausea/vomiting-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="nausea/vomiting-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="nausea/vomiting-btn" id="nausea/vomiting-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="nausea/vomiting-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="nausea/vomiting-btn" id="nausea/vomiting-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="nausea/vomiting-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="nausea/vomiting-btn" id="nausea/vomiting-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="nausea/vomiting-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">diarrhea</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="diarrhea-btn" id="diarrhea-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="diarrhea-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="diarrhea-btn" id="diarrhea-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="diarrhea-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="diarrhea-btn" id="diarrhea-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="diarrhea-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="diarrhea-btn" id="diarrhea-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="diarrhea-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">hematemsis</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="hematemsis-btn" id="hematemsis-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="hematemsis-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="hematemsis-btn" id="hematemsis-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="hematemsis-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="hematemsis-btn" id="hematemsis-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="hematemsis-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="hematemsis-btn" id="hematemsis-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="hematemsis-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">blood in stool</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="blood in stool-btn" id="blood in stool-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="blood in stool-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="blood in stool-btn" id="blood in stool-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="blood in stool-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="blood in stool-btn" id="blood in stool-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="blood in stool-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="blood in stool-btn" id="blood in stool-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="blood in stool-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">constipation</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="constipation-btn" id="constipation-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="constipation-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="constipation-btn" id="constipation-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="constipation-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="constipation-btn" id="constipation-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="constipation-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="constipation-btn" id="constipation-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="constipation-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+    </table>
+      <h4>pregnancy status</h4>
+      <table class="table table-striped" style="width:700px;">
+        <tr>
+          <td width="70%">known pregnant</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="known pregnant-btn" id="known pregnant-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="known pregnant-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="known pregnant-btn" id="known pregnant-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="known pregnant-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="known pregnant-btn" id="known pregnant-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="known pregnant-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="known pregnant-btn" id="known pregnant-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="known pregnant-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">possibly pregnant</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="possibly pregnant-btn" id="possibly pregnant-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="possibly pregnant-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="possibly pregnant-btn" id="possibly pregnant-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="possibly pregnant-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="possibly pregnant-btn" id="possibly pregnant-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="possibly pregnant-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="possibly pregnant-btn" id="possibly pregnant-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="possibly pregnant-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">S/P sterilization</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="S/P sterilization-btn" id="S/P sterilization-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="S/P sterilization-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="S/P sterilization-btn" id="S/P sterilization-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="S/P sterilization-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="S/P sterilization-btn" id="S/P sterilization-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="S/P sterilization-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="S/P sterilization-btn" id="S/P sterilization-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="S/P sterilization-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">S/P menopause</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="S/P menopause-btn" id="S/P menopause-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="S/P menopause-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="S/P menopause-btn" id="S/P menopause-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="S/P menopause-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="S/P menopause-btn" id="S/P menopause-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="S/P menopause-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="S/P menopause-btn" id="S/P menopause-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="S/P menopause-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+    </table>
+      <h4>GU symptoms</h4>
+      <table class="table table-striped" style="width:700px;">
+        <tr>
+          <td width="70%">dysuria</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="dysuria-btn" id="dysuria-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="dysuria-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="dysuria-btn" id="dysuria-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="dysuria-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="dysuria-btn" id="dysuria-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="dysuria-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="dysuria-btn" id="dysuria-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="dysuria-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">urethral discharge</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="urethral discharge-btn" id="urethral discharge-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="urethral discharge-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="urethral discharge-btn" id="urethral discharge-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="urethral discharge-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="urethral discharge-btn" id="urethral discharge-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="urethral discharge-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="urethral discharge-btn" id="urethral discharge-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="urethral discharge-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">frequency</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="frequency-btn" id="frequency-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="frequency-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="frequency-btn" id="frequency-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="frequency-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="frequency-btn" id="frequency-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="frequency-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="frequency-btn" id="frequency-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="frequency-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">urinary pressure</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="urinary pressure-btn" id="urinary pressure-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="urinary pressure-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="urinary pressure-btn" id="urinary pressure-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="urinary pressure-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="urinary pressure-btn" id="urinary pressure-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="urinary pressure-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="urinary pressure-btn" id="urinary pressure-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="urinary pressure-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">genital ulcers/sores</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="genital ulcers/sores-btn" id="genital ulcers/sores-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="genital ulcers/sores-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="genital ulcers/sores-btn" id="genital ulcers/sores-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="genital ulcers/sores-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="genital ulcers/sores-btn" id="genital ulcers/sores-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="genital ulcers/sores-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="genital ulcers/sores-btn" id="genital ulcers/sores-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="genital ulcers/sores-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">vaginal bleeding</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="vaginal bleeding-btn" id="vaginal bleeding-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="vaginal bleeding-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="vaginal bleeding-btn" id="vaginal bleeding-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="vaginal bleeding-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="vaginal bleeding-btn" id="vaginal bleeding-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="vaginal bleeding-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="vaginal bleeding-btn" id="vaginal bleeding-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="vaginal bleeding-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">testicular pain</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="testicular pain-btn" id="testicular pain-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="testicular pain-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="testicular pain-btn" id="testicular pain-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="testicular pain-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="testicular pain-btn" id="testicular pain-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="testicular pain-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="testicular pain-btn" id="testicular pain-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="testicular pain-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">scrotal swelling</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="scrotal swelling-btn" id="scrotal swelling-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="scrotal swelling-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="scrotal swelling-btn" id="scrotal swelling-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="scrotal swelling-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="scrotal swelling-btn" id="scrotal swelling-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="scrotal swelling-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="scrotal swelling-btn" id="scrotal swelling-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="scrotal swelling-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">scrotal redness</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="scrotal redness-btn" id="scrotal redness-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="scrotal redness-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="scrotal redness-btn" id="scrotal redness-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="scrotal redness-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="scrotal redness-btn" id="scrotal redness-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="scrotal redness-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="scrotal redness-btn" id="scrotal redness-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="scrotal redness-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+    </table>
+
+  <h3>Risk Factors</h3>
+      <h4>ectopic</h4>
+      <table class="table table-striped" style="width:700px;">
+        <tr>
+          <td width="70%">infertility</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="infertility-btn" id="infertility-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="infertility-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="infertility-btn" id="infertility-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="infertility-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="infertility-btn" id="infertility-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="infertility-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="infertility-btn" id="infertility-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="infertility-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">prior ectopic</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="prior ectopic-btn" id="prior ectopic-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="prior ectopic-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="prior ectopic-btn" id="prior ectopic-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="prior ectopic-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="prior ectopic-btn" id="prior ectopic-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="prior ectopic-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="prior ectopic-btn" id="prior ectopic-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="prior ectopic-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">history of PID</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="history of PID-btn" id="history of PID-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="history of PID-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="history of PID-btn" id="history of PID-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="history of PID-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="history of PID-btn" id="history of PID-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="history of PID-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="history of PID-btn" id="history of PID-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="history of PID-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">current IUD</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="current IUD-btn" id="current IUD-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="current IUD-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="current IUD-btn" id="current IUD-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="current IUD-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="current IUD-btn" id="current IUD-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="current IUD-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="current IUD-btn" id="current IUD-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="current IUD-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">recent elective abortion</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="recent elective abortion-btn" id="recent elective abortion-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="recent elective abortion-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="recent elective abortion-btn" id="recent elective abortion-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="recent elective abortion-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="recent elective abortion-btn" id="recent elective abortion-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="recent elective abortion-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="recent elective abortion-btn" id="recent elective abortion-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="recent elective abortion-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+    </table>
+      <h4>abdominal aortic aneurysm</h4>
+      <table class="table table-striped" style="width:700px;">
+        <tr>
+          <td width="70%">age &gt; 45 years</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="age &gt; 45 years-btn" id="age &gt; 45 years-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="age &gt; 45 years-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="age &gt; 45 years-btn" id="age &gt; 45 years-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="age &gt; 45 years-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="age &gt; 45 years-btn" id="age &gt; 45 years-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="age &gt; 45 years-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="age &gt; 45 years-btn" id="age &gt; 45 years-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="age &gt; 45 years-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">hypertension</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="hypertension-btn" id="hypertension-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="hypertension-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="hypertension-btn" id="hypertension-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="hypertension-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="hypertension-btn" id="hypertension-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="hypertension-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="hypertension-btn" id="hypertension-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="hypertension-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">family history</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="family history-btn" id="family history-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="family history-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="family history-btn" id="family history-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="family history-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="family history-btn" id="family history-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="family history-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="family history-btn" id="family history-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="family history-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">current AAA</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="current AAA-btn" id="current AAA-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="current AAA-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="current AAA-btn" id="current AAA-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="current AAA-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="current AAA-btn" id="current AAA-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="current AAA-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="current AAA-btn" id="current AAA-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="current AAA-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">syncope with abdominal pain</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="syncope with abdominal pain-btn" id="syncope with abdominal pain-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="syncope with abdominal pain-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="syncope with abdominal pain-btn" id="syncope with abdominal pain-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="syncope with abdominal pain-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="syncope with abdominal pain-btn" id="syncope with abdominal pain-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="syncope with abdominal pain-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="syncope with abdominal pain-btn" id="syncope with abdominal pain-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="syncope with abdominal pain-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+    </table>
+      <h4>ischemic bowel</h4>
+      <table class="table table-striped" style="width:700px;">
+        <tr>
+          <td width="70%">age &gt; 60 years</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="age &gt; 60 years-btn" id="age &gt; 60 years-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="age &gt; 60 years-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="age &gt; 60 years-btn" id="age &gt; 60 years-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="age &gt; 60 years-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="age &gt; 60 years-btn" id="age &gt; 60 years-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="age &gt; 60 years-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="age &gt; 60 years-btn" id="age &gt; 60 years-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="age &gt; 60 years-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">atrial fibrillation</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="atrial fibrillation-btn" id="atrial fibrillation-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="atrial fibrillation-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="atrial fibrillation-btn" id="atrial fibrillation-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="atrial fibrillation-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="atrial fibrillation-btn" id="atrial fibrillation-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="atrial fibrillation-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="atrial fibrillation-btn" id="atrial fibrillation-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="atrial fibrillation-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">recent AMI</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="recent AMI-btn" id="recent AMI-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="recent AMI-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="recent AMI-btn" id="recent AMI-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="recent AMI-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="recent AMI-btn" id="recent AMI-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="recent AMI-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="recent AMI-btn" id="recent AMI-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="recent AMI-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">peripheral vascular disease</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="peripheral vascular disease-btn" id="peripheral vascular disease-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="peripheral vascular disease-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="peripheral vascular disease-btn" id="peripheral vascular disease-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="peripheral vascular disease-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="peripheral vascular disease-btn" id="peripheral vascular disease-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="peripheral vascular disease-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="peripheral vascular disease-btn" id="peripheral vascular disease-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="peripheral vascular disease-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="70%">congestive heart failure</td>
+          <td width="30%">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="congestive heart failure-btn" id="congestive heart failure-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+              <label class="btn btn-outline-primary" for="congestive heart failure-btn-unaddressed">X</label>
+
+              <input type="radio" class="btn-check" name="congestive heart failure-btn" id="congestive heart failure-btn-yes" autocomplete="off" value="yes">
+              <label class="btn btn-outline-primary" for="congestive heart failure-btn-yes">Yes</label>
+
+              <input type="radio" class="btn-check" name="congestive heart failure-btn" id="congestive heart failure-btn-no" autocomplete="off" value="no">
+              <label class="btn btn-outline-primary" for="congestive heart failure-btn-no">No</label>
+
+              <input type="radio" class="btn-check" name="congestive heart failure-btn" id="congestive heart failure-btn-unknown" autocomplete="off" value="unknown">
+              <label class="btn btn-outline-primary" for="congestive heart failure-btn-unknown">Unk</label>
+            </div>
+          </td>
+        </tr>
+    </table>
+
+  <h3>Differential Diagnoses</h3>
+  <table class="table table-striped" style="width:700px;">
+    <tr>
+      <td width="60%">abdominal aortic aneurysm</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="abdominal aortic aneurysm-btn" id="abdominal aortic aneurysm-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="abdominal aortic aneurysm-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="abdominal aortic aneurysm-btn" id="abdominal aortic aneurysm-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="abdominal aortic aneurysm-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="abdominal aortic aneurysm-btn" id="abdominal aortic aneurysm-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="abdominal aortic aneurysm-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">appendicitis</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="appendicitis-btn" id="appendicitis-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="appendicitis-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="appendicitis-btn" id="appendicitis-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="appendicitis-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="appendicitis-btn" id="appendicitis-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="appendicitis-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">cholecystitis</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="cholecystitis-btn" id="cholecystitis-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="cholecystitis-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="cholecystitis-btn" id="cholecystitis-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="cholecystitis-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="cholecystitis-btn" id="cholecystitis-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="cholecystitis-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">cholelithiasis</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="cholelithiasis-btn" id="cholelithiasis-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="cholelithiasis-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="cholelithiasis-btn" id="cholelithiasis-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="cholelithiasis-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="cholelithiasis-btn" id="cholelithiasis-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="cholelithiasis-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">diverticular disease</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="diverticular disease-btn" id="diverticular disease-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="diverticular disease-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="diverticular disease-btn" id="diverticular disease-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="diverticular disease-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="diverticular disease-btn" id="diverticular disease-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="diverticular disease-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">ectopic pregnancy</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="ectopic pregnancy-btn" id="ectopic pregnancy-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="ectopic pregnancy-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="ectopic pregnancy-btn" id="ectopic pregnancy-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="ectopic pregnancy-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="ectopic pregnancy-btn" id="ectopic pregnancy-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="ectopic pregnancy-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">hernia</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="hernia-btn" id="hernia-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="hernia-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="hernia-btn" id="hernia-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="hernia-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="hernia-btn" id="hernia-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="hernia-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">ischemic bowel</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="ischemic bowel-btn" id="ischemic bowel-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="ischemic bowel-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="ischemic bowel-btn" id="ischemic bowel-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="ischemic bowel-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="ischemic bowel-btn" id="ischemic bowel-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="ischemic bowel-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">myocardial infarction</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="myocardial infarction-btn" id="myocardial infarction-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="myocardial infarction-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="myocardial infarction-btn" id="myocardial infarction-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="myocardial infarction-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="myocardial infarction-btn" id="myocardial infarction-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="myocardial infarction-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">obstruction</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="obstruction-btn" id="obstruction-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="obstruction-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="obstruction-btn" id="obstruction-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="obstruction-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="obstruction-btn" id="obstruction-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="obstruction-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">pancreatitis</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="pancreatitis-btn" id="pancreatitis-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="pancreatitis-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="pancreatitis-btn" id="pancreatitis-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="pancreatitis-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="pancreatitis-btn" id="pancreatitis-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="pancreatitis-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">peptic ulcer disease/GERD</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="peptic ulcer disease/GERD-btn" id="peptic ulcer disease/GERD-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="peptic ulcer disease/GERD-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="peptic ulcer disease/GERD-btn" id="peptic ulcer disease/GERD-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="peptic ulcer disease/GERD-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="peptic ulcer disease/GERD-btn" id="peptic ulcer disease/GERD-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="peptic ulcer disease/GERD-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">perforated viscus</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="perforated viscus-btn" id="perforated viscus-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="perforated viscus-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="perforated viscus-btn" id="perforated viscus-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="perforated viscus-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="perforated viscus-btn" id="perforated viscus-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="perforated viscus-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">pneumonia</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="pneumonia-btn" id="pneumonia-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="pneumonia-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="pneumonia-btn" id="pneumonia-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="pneumonia-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="pneumonia-btn" id="pneumonia-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="pneumonia-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">renal colic</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="renal colic-btn" id="renal colic-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="renal colic-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="renal colic-btn" id="renal colic-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="renal colic-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="renal colic-btn" id="renal colic-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="renal colic-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">spontaneous bacterial peritonitis</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="spontaneous bacterial peritonitis-btn" id="spontaneous bacterial peritonitis-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="spontaneous bacterial peritonitis-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="spontaneous bacterial peritonitis-btn" id="spontaneous bacterial peritonitis-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="spontaneous bacterial peritonitis-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="spontaneous bacterial peritonitis-btn" id="spontaneous bacterial peritonitis-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="spontaneous bacterial peritonitis-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">urinary retention</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="urinary retention-btn" id="urinary retention-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="urinary retention-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="urinary retention-btn" id="urinary retention-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="urinary retention-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="urinary retention-btn" id="urinary retention-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="urinary retention-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">UTI/pyelonephritis</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="UTI/pyelonephritis-btn" id="UTI/pyelonephritis-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="UTI/pyelonephritis-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="UTI/pyelonephritis-btn" id="UTI/pyelonephritis-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="UTI/pyelonephritis-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="UTI/pyelonephritis-btn" id="UTI/pyelonephritis-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="UTI/pyelonephritis-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">torsion</td>
+      <td width="40%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="torsion-btn" id="torsion-btn-unaddressed" autocomplete="off" checked value="unaddressed">
+          <label class="btn btn-outline-primary" for="torsion-btn-unaddressed">X</label>
+
+          <input type="radio" class="btn-check" name="torsion-btn" id="torsion-btn-likely" autocomplete="off" value="considered and likely">
+          <label class="btn btn-outline-primary" for="torsion-btn-likely">considered and likely</label>
+
+          <input type="radio" class="btn-check" name="torsion-btn" id="torsion-btn-unlikely" autocomplete="off" value="considered but unlikely">
+          <label class="btn btn-outline-primary" for="torsion-btn-unlikely">considered but unlikely</label>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Medical Decision Making</h3>
+  <table class="table table-striped" style="width:700px;">
+    <tr>
+      <td width="70%">Long MDM text</td>
+      <td width="30%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="itemName-btn" id="itemName-btn-do_not_include" autocomplete="off" checked value="do not include">
+          <label class="btn btn-outline-primary" for="itemName-btn-do_not_include">do not include</label>
+
+          <input type="radio" class="btn-check" name="itemName-btn" id="itemName-btn-include" autocomplete="off" value="include">
+          <label class="btn btn-outline-primary" for="itemName-btn-include">include</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="70%">Extra long MDM text</td>
+      <td width="30%">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="itemName-btn" id="itemName-btn-do_not_include" autocomplete="off" checked value="do not include">
+          <label class="btn btn-outline-primary" for="itemName-btn-do_not_include">do not include</label>
+
+          <input type="radio" class="btn-check" name="itemName-btn" id="itemName-btn-include" autocomplete="off" value="include">
+          <label class="btn btn-outline-primary" for="itemName-btn-include">include</label>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Resources</h3>
+    <a href="http://mdcalc.com" target="_blank" rel="noopener noreferrer">Resource text</a><br>
+
+  <hr>
+
+  <span name="chartOutput" id="chartOutput"></span>
+
+  <script>
+    // How to get the value of a radio group:
+    //  console.log(document.querySelector('input[name= chartData.diagnoses[i].key_history[0].section[k].items[j].item + "-btn"]:checked').value)
+
+    // obtain and decode encoded JSON from the helper function getJSONData
+    const chartRawData = decodeURIComponent("%7B%22diagnoses%22%3A%5B%7B%22name%22%3A%22NAME%22%2C%22key_history%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22NAME%22%2C%22items%22%3A%5B%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22yes%22%7D%2C%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22no%22%7D%2C%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22unknown%22%7D%5D%7D%2C%7B%22name%22%3A%22NAME%22%2C%22items%22%3A%5B%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22risk_factor%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22NAME%22%2C%22items%22%3A%5B%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22NAME%22%2C%22items%22%3A%5B%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22ddx%22%3A%5B%7B%22item%22%3A%22text%22%2C%22value%22%3A%22considered%20and%20likely%22%7D%2C%7B%22item%22%3A%22text%22%2C%22value%22%3A%22considered%20but%20unlikely%22%7D%2C%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%5D%2C%22mdm%22%3A%5B%7B%22item%22%3A%22itemName%22%2C%22text%22%3A%22Long%20MDM%20text%22%2C%22value%22%3A%22do%20not%20include%22%7D%2C%7B%22item%22%3A%22itemName%22%2C%22text%22%3A%22Extra%20long%20MDM%20text%22%2C%22value%22%3A%22include%22%7D%5D%2C%22resource%22%3A%5B%7B%22item%22%3A%22Resource%20text%22%2C%22value%22%3A%22http%3A%2F%2Fmdcalc.com%22%7D%5D%7D%2C%7B%22name%22%3A%22chest%20pain%22%2C%22key_history%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22high%20risk%20history%22%2C%22items%22%3A%5B%7B%22item%22%3A%22diaphoresis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pain%20with%20radiation%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22vomiting%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22tearing%20sensation%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22syncope%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22pre-hospital%20treatment%22%2C%22items%22%3A%5B%7B%22item%22%3A%22aspirin%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22nitro%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22risk_factor%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22CAD%20risk%20factors%22%2C%22items%22%3A%5B%7B%22item%22%3A%22known%20CAD%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22male%20gender%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22smoker%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hyperlipidemia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypertension%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22diabetes%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22family%20history%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22lupus%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22auto-immune%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cocaine%20use%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22alcoholism%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22HIV%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22chronic%20renal%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22chemotherapy%20(recent)%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22thoracic%20aortic%20dissection%20risk%20factors%22%2C%22items%22%3A%5B%7B%22item%22%3A%22hypertension%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22first%20degree%20realtive%20with%20TAD%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22Turners%20Syndrome%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22connective%20tissue%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22aortic%20valve%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22pulmonary%20embolus%20risk%20factors%22%2C%22items%22%3A%5B%7B%22item%22%3A%22prior%20DVT%20or%20PE%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22malignancy%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pregnancy%20or%20post-partum%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22immobile%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22surgery%20within%20last%206%20weeks%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypercoaguable%20condition%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22travel%20%3E%201000%20km%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22ddx%22%3A%5B%7B%22item%22%3A%22ACS%2FAMI%22%2C%22value%22%3A%22considered%20and%20likely%22%7D%2C%7B%22item%22%3A%22aneurysm%22%2C%22value%22%3A%22considered%20but%20unlikely%22%7D%2C%7B%22item%22%3A%22aortic%20stenosis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22atypical%20chest%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22chest%20wall%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cholecystitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cholelithiasis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22costochondritis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22dissection%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22esophageal%20rupture%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22myocarditis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pancreatitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pericarditis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pneumonia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pneumothorax%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pulmonary%20embolus%22%2C%22value%22%3A%22unaddressed%22%7D%5D%2C%22mdm%22%3A%5B%7B%22item%22%3A%22HEART%20scoore%22%2C%22text%22%3A%22HEART%20Score%20is%20less%20than%204%2C%20and%20two%20negative%20troponins%20(baseline%20and%203%20hours)%20have%20been%20obtained.%2030-day%20risk%20of%20significant%20adverse%20cardiac%20event%20is%20less%20than%201%25.%20Risk%20assessment%20was%20shared%20with%20the%20patient.%22%2C%22value%22%3A%22do%20not%20include%22%7D%2C%7B%22item%22%3A%22MDM%20item%22%2C%22text%22%3A%22Long%20MDM%20text%22%2C%22value%22%3A%22include%22%7D%5D%2C%22resource%22%3A%5B%7B%22item%22%3A%22HEART%20Pathway%20for%20Early%20Discharge%20in%20Acute%20Chest%20Pain%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fheart-pathway-early-discharge-acute-chest-pain%22%7D%2C%7B%22item%22%3A%22ACEP%20Thoracic%20Aortic%20Dissection%20Guideline%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fguidelines%2Facep%2Fthoracic-aortic-dissection%22%7D%2C%7B%22item%22%3A%22PERC%20Rule%20for%20Pulmonary%20Embolism%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fperc-rule-pulmonary-embolism%22%7D%2C%7B%22item%22%3A%22Well's%20Criteria%20for%20Pulmonary%20Embolism%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fwells-criteria-pulmonary-embolism%22%7D%2C%7B%22item%22%3A%22Age-Adjusted%20D-dimer%20for%20VTE%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fage-adjusted-d-dimer-venous-thromboembolism-vte%22%7D%2C%7B%22item%22%3A%22Hestia%20Criteria%20for%20Outpatient%20Pulmonary%20Embolism%20Treatment%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fhestia-criteria-outpatient-pulmonary-embolism-treatment%22%7D%5D%7D%2C%7B%22name%22%3A%22abdominal%20pain%22%2C%22key_history%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22associated%20symptoms%22%2C%22items%22%3A%5B%7B%22item%22%3A%22fever%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22nausea%2Fvomiting%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22diarrhea%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hematemsis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22blood%20in%20stool%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22constipation%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22pregnancy%20status%22%2C%22items%22%3A%5B%7B%22item%22%3A%22known%20pregnant%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22possibly%20pregnant%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22S%2FP%20sterilization%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22S%2FP%20menopause%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22GU%20symptoms%22%2C%22items%22%3A%5B%7B%22item%22%3A%22dysuria%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22urethral%20discharge%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22frequency%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22urinary%20pressure%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22genital%20ulcers%2Fsores%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22vaginal%20bleeding%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22testicular%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22scrotal%20swelling%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22scrotal%20redness%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22risk_factor%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22ectopic%22%2C%22items%22%3A%5B%7B%22item%22%3A%22infertility%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22prior%20ectopic%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22history%20of%20PID%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22current%20IUD%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22recent%20elective%20abortion%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22abdominal%20aortic%20aneurysm%22%2C%22items%22%3A%5B%7B%22item%22%3A%22age%20%3E%2045%20years%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypertension%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22family%20history%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22current%20AAA%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22syncope%20with%20abdominal%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22ischemic%20bowel%22%2C%22items%22%3A%5B%7B%22item%22%3A%22age%20%3E%2060%20years%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22atrial%20fibrillation%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22recent%20AMI%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22peripheral%20vascular%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22congestive%20heart%20failure%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22ddx%22%3A%5B%7B%22item%22%3A%22abdominal%20aortic%20aneurysm%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22appendicitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cholecystitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cholelithiasis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22diverticular%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22ectopic%20pregnancy%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hernia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22ischemic%20bowel%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22myocardial%20infarction%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22obstruction%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pancreatitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22peptic%20ulcer%20disease%2FGERD%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22perforated%20viscus%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pneumonia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22renal%20colic%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22spontaneous%20bacterial%20peritonitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22urinary%20retention%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22UTI%2Fpyelonephritis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22torsion%22%2C%22value%22%3A%22unaddressed%22%7D%5D%2C%22mdm%22%3A%5B%7B%22item%22%3A%22itemName%22%2C%22text%22%3A%22Long%20MDM%20text%22%2C%22value%22%3A%22do%20not%20include%22%7D%2C%7B%22item%22%3A%22itemName%22%2C%22text%22%3A%22Extra%20long%20MDM%20text%22%2C%22value%22%3A%22do%20not%20include%22%7D%5D%2C%22resource%22%3A%5B%7B%22item%22%3A%22Resource%20text%22%2C%22value%22%3A%22http%3A%2F%2Fmdcalc.com%22%7D%5D%7D%2C%7B%22name%22%3A%22back%20pain%22%2C%22key_history%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22high%20risk%20features%22%2C%22items%22%3A%5B%7B%22item%22%3A%22abnormal%20vital%20signs%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22age%20%3E50%20years%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22associated%20trauma%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22incontinence%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22saddle%20anesthesia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22urinary%20retention%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22loss%20of%20rectal%20tone%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22bilateral%20sciatica%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22leg%20weakness%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22focal%20neurologic%20finding%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22postive%20Babinski%20sign%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22percussive%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22fever%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22immunocompromised%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22IV%20drug%20use%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22anticoagulant%20use%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22tuberculosis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22unexpected%20weight%20loss%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22history%20of%20cancer%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22steroid%20use%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22syncope%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pulsating%20abdominal%20mass%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22recenet%20spinal%20procedure%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22new%20ataxia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22frequent%20falls%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22clotting%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22noctural%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22severe%20pain%20when%20supine%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22%E2%89%A53%20weeks%20of%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22risk_factor%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22abdominal%20aortic%20aneurysm%22%2C%22items%22%3A%5B%7B%22item%22%3A%22age%20%E2%89%A545%20years%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypertension%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22family%20history%20of%20AAA%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22current%20AAA%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22syncope%20with%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22ddx%22%3A%5B%7B%22item%22%3A%22abdominal%20aortic%20aneurysm%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22aortic%20dissection%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cauda%20equina%20syndrome%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22disc%20herniation%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22ectopic%20pregnancy%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22epidural%20abscess%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22epidural%20hematoma%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22meningitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22muscle%20strain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22myocardial%20infarction%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22non-specific%20back%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22perforated%20viscus%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pneumonia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22prostatitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pulomary%20embolus%2Finfarct%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22renal%20colic%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22retroperitoneal%20hematoma%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22sciatica%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22septic%20discitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22vertebral%20osteomyelitis%22%2C%22value%22%3A%22unaddressed%22%7D%5D%2C%22mdm%22%3A%5B%7B%22item%22%3A%22itemName%22%2C%22text%22%3A%22Long%20MDM%20text%22%2C%22value%22%3A%22do%20not%20include%22%7D%2C%7B%22item%22%3A%22itemName%22%2C%22text%22%3A%22Extra%20long%20MDM%20text%22%2C%22value%22%3A%22include%22%7D%5D%2C%22resource%22%3A%5B%7B%22item%22%3A%22Resource%20text%22%2C%22value%22%3A%22http%3A%2F%2Fmdcalc.com%22%7D%5D%7D%2C%7B%22name%22%3A%22back%20pain%20DUPLICATE%22%2C%22key_history%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22NAME%22%2C%22items%22%3A%5B%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22yes%22%7D%2C%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22no%22%7D%2C%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22unknown%22%7D%5D%7D%2C%7B%22name%22%3A%22NAME%22%2C%22items%22%3A%5B%7B%22item%22%3A%22TEXT%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22risk_factor%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22NAME%22%2C%22items%22%3A%5B%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22NAME%22%2C%22items%22%3A%5B%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22ddx%22%3A%5B%7B%22item%22%3A%22text%22%2C%22value%22%3A%22considered%20and%20likely%22%7D%2C%7B%22item%22%3A%22text%22%2C%22value%22%3A%22considered%20but%20unlikely%22%7D%2C%7B%22item%22%3A%22text%22%2C%22value%22%3A%22unaddressed%22%7D%5D%2C%22mdm%22%3A%5B%7B%22item%22%3A%22itemName%22%2C%22text%22%3A%22Long%20MDM%20text%22%2C%22value%22%3A%22do%20not%20include%22%7D%2C%7B%22item%22%3A%22itemName%22%2C%22text%22%3A%22Extra%20long%20MDM%20text%22%2C%22value%22%3A%22include%22%7D%5D%2C%22resource%22%3A%5B%7B%22item%22%3A%22Resource%20text%22%2C%22value%22%3A%22http%3A%2F%2Fmdcalc.com%22%7D%5D%7D%2C%7B%22name%22%3A%22vertigo%20or%20syncope%22%2C%22key_history%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22key%20history%22%2C%22items%22%3A%5B%7B%22item%22%3A%22loss%20of%20consciousness%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22loss%20of%20postural%20tone%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22seizure-like%20movements%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22sensation%20of%20movement%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22lightheadedness%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22balance%20off%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22high%20risk%20features%22%2C%22items%22%3A%5B%7B%22item%22%3A%22male%20gender%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22age%20%3E%2060%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22exertional%20onset%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22chest%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22severe%20headache%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22dyspnea%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22abdominal%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22supine%20onset%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22palpitations%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22no%20prodrome%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22black%2Ftarry%20stools%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22structural%20heart%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22heart%20failure%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cerebrovascular%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22family%20history%20of%20sudden%20death%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22persistent%20abnormal%20vital%20signs%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22positive%20troponin%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22risk_factor%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22CAD%20risk%20factors%22%2C%22items%22%3A%5B%7B%22item%22%3A%22known%20CAD%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22male%20gender%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22smoker%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hyperlipidemia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypertension%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22diabetes%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22family%20history%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22lupus%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22auto-immune%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cocaine%20use%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22alcoholism%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22HIV%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22chronic%20renal%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22chemotherapy%20(recent)%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22pulmonary%20embolus%20risk%20factors%22%2C%22items%22%3A%5B%7B%22item%22%3A%22prior%20DVT%20or%20PE%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22malignancy%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pregnancy%20or%20post-partum%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22immobile%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22surgery%20within%20last%206%20weeks%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypercoaguable%20condition%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22travel%20%3E%201000%20km%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%2C%7B%22name%22%3A%22ACEP%20and%20ROSE%20admission%20requirements%20(any%20one)%22%2C%22items%22%3A%5B%7B%22item%22%3A%22older%20age%20and%20associated%20comorbidities%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22abnormal%20ECG%20findings%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22history%20of%20CHF%2C%20CAD%2C%20structural%20heart%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22BNP%20%E2%89%A5%20300%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22bradycardia%20%E2%89%A4%2050%20bpm%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22positive%20fecal%20occult%20blood%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hemoglobin%20%E2%89%A4%209%20g%2FdL%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22chest%20pain%20with%20syncope%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22O2%20sat%20%E2%89%A4%2094%25%20on%20room%20air%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22Q%20wave%20on%20ECG%20(no%20in%20lead%20III)%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22ddx%22%3A%5B%7B%22item%22%3A%22acoustic%20neuroma%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22acute%20vistibular%20syndomes%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22anemia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22aortic%20stenosis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22arrhythmia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22B12%20deficiency%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22benign%20positional%20vertigo%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22bradycardia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22brain%20tumor%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22Brugada%20syndrome%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cardiomyopathy%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22carotid%20sinus%20syndrome%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cerebral%20bleed%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cerebral%20ischemia%2Finfarct%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cerebrovascular%20disorder%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22heavy%20metal%20toxicity%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hyperventilation%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypoglycemia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypotension%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22hypoxia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22idiopathic%20syncope%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22labrynthitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22long%20or%20short%20QT%20syndromes%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22mitral%20stenosis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22multiple%20sclerosis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22myocardial%20infarction%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22orthostatic%20syncope%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22ototoxic%20medications%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pericardial%20tamponade%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pre-excitation%20syndromes%20(WPW%2C%20LGL)%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22psychogenic%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pulmonary%20embolus%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pulmonary%20hypertension%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22sepsis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22tachycardia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22vasovagal%20(neurogenic)%20syncope%22%2C%22value%22%3A%22unaddressed%22%7D%5D%2C%22mdm%22%3A%5B%7B%22item%22%3A%22no%20arrhythmia%22%2C%22text%22%3A%22I%20think%20arrhythmia%20is%20unlikely.%20ECG%20shows%20normal%20sinus%20rhythm%20with%20no%20interval%20abnormalities%20such%20as%20QT%20prolongation%20or%20WPW.%20There%20are%20no%20findings%20to%20suggest%20Brugada%20syndrome.%20Cardiac%20monitoring%20in%20the%20emergency%20department%20revealed%20no%20tachycardic%20or%20bradycardic%20dysrhythmia.%20Hypertrophic%20cardiomyopathy%20was%20considered%20but%20there%20are%20no%20clear%20historical%20elements%20pointing%20towards%20this%20--%20EKG%20is%20not%20suggestive%2C%20QRS%20voltage%20is%20not%20extremely%20large%20and%20there%20are%20no%20suggestive%20Q-waves.%22%2C%22value%22%3A%22do%20not%20include%22%7D%5D%2C%22resource%22%3A%5B%7B%22item%22%3A%22Canadian%20Syncope%20Risk%20Score%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fcanadian-syncope-risk-score%22%7D%2C%7B%22item%22%3A%22EGSYS%20(Evaluation%20of%20Guidelines%20in%20SYncope%20Study)%20Score%20for%20Syncope%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fegsys-evaluation-guidelines-syncope-study-score-syncope%22%7D%5D%7D%2C%7B%22name%22%3A%22headache%22%2C%22key_history%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22high%20risk%20features%22%2C%22items%22%3A%5B%7B%22item%22%3A%22new%20onset%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22neurologic%20findings%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22sudden%20onset%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22worse%20at%20onset%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22fever%2Fimmunocompromised%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22elderly%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22progressive%20headache%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22jaw%2Ftemple%20pain%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22multiple%20patients%20with%20headache%20(CO%20exposure)%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pregnant%2Fperipartum%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22clotting%20disease%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22trauma%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cervical%20manipulation%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22dizzy%20with%20headache%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22risk_factor%22%3A%5B%7B%22section%22%3A%5B%7B%22name%22%3A%22Ottawa%20SHA%20Rule%22%2C%22items%22%3A%5B%7B%22item%22%3A%22age%20%3E%2040%20years%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22neck%20pain%2Fstiffness%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22witnessed%20loss%20of%20consciousness%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22thunderclap%20onset%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22exertional%20onset%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22limited%20neck%20flexion%22%2C%22value%22%3A%22unaddressed%22%7D%5D%7D%5D%7D%5D%2C%22ddx%22%3A%5B%7B%22item%22%3A%22brain%20abscess%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22carotid%2Fvertebral%20dissection%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cavernous%20sinus%20thrombosis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22central%20dural%20vein%20thrombosis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22cluster%20headache%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22CO%20poisoning%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22encephalitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22epidural%20hemorrhage%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22giant%20cell%20arteritis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22glaucoma%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22headache%20(non-specified)%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22idopathic%20intracranial%20hypertension%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22increased%20intracranial%20pressure%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22intercerebral%20hemorrhage%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22meningitis%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22migrane%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22neoplasm%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pituitary%20apoplexy%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22pre-eclampsia%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22subarachnoid%20hemorrhage%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22subdural%20hemorrhage%22%2C%22value%22%3A%22unaddressed%22%7D%2C%7B%22item%22%3A%22tension%20headache%22%2C%22value%22%3A%22unaddressed%22%7D%5D%2C%22mdm%22%3A%5B%7B%22item%22%3A%22migraine%20cocktail%22%2C%22value%22%3A%22Migraine%20Cocktail%3A%20acetaminophen%20650%20mg%20PO%2C%20diphenhyramine%2025%20mg%20IV%2C%200.9%25%20NS%201%20L%20bolus%20IV%2C%20prochlorperazine%2010%20mg%20IV%20over%2015%20min%2C%20dexamethasone%2010%20mg%20IV%2C%20ketorolac%2010%20mg%20IV%22%7D%2C%7B%22item%22%3A%22SAH-mdm%22%2C%22text%22%3A%22Over%2090%25%20of%20patients%20with%20subarachnoid%20hemorrhage%20will%20report%20a%20sudden%2C%20sever%20headache%2C%20and%2030%25%20of%20the%20time%20the%20headache%20will%20lateralize%20to%20the%20side%20of%20the%20head.%22%2C%22value%22%3A%22do%20not%20include%22%7D%2C%7B%22item%22%3A%22meningitis-mdm%22%2C%22text%22%3A%22Fever%2C%20neck%20pain%2C%20or%20altered%20mental%20status%20is%20present%20in%2099-100%25%20of%20patients%20with%20meningitis%3B%20therefore%2C%20the%20absence%20of%20all%20three%20of%20these%20symptoms%20or%20exam%20findings%20is%20reassuring.%22%2C%22value%22%3A%22include%22%7D%5D%2C%22resource%22%3A%5B%7B%22item%22%3A%22ACEP%20headache%20guideline%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fguidelines%2Facep%2Fheadache%22%7D%2C%7B%22item%22%3A%22Ottawa%20SAH%20rule%22%2C%22value%22%3A%22https%3A%2F%2Fwww.mdcalc.com%2Fottawa-subarachnoid-hemorrhage-sah-rule-headache-evaluation%22%7D%5D%7D%5D%7D")
+    // parse raw data into JSON format
+    const chartData = JSON.parse(chartRawData)
+
+
+    document.onclick = buildChart
+
+    function buildChart(){
+      chartHTML = "<h3>abdominal pain chart data</h3>"
+      chartHTML += "<button type='button' id='copyButton' class='btn btn-secondary' onclick='copyToClipboard()'>Copy Chart</button><br><br>"
+      positiveItems = ""
+      negativeItems = ""
+      unknownItems = ""
+      for (i=0; i < (chartData.diagnoses).length; i++) {
+        if (chartData.diagnoses[i].name === "abdominal pain") {
+          // found the chart to parse
+          for (k=0; k < (chartData.diagnoses[i].key_history[0].section).length; k++) {
+            positiveItems = "The <b>" + chartData.diagnoses[i].key_history[0].section[k].name + "</b> items that are positive include: <ul>"
+            negativeItems = "The <b>" + chartData.diagnoses[i].key_history[0].section[k].name + "</b> items that are negative include: <ul>"
+            unknownItems = "The <b>" + chartData.diagnoses[i].key_history[0].section[k].name + "</b> items that are unknown by the patient include: <ul>"
+            includePositiveItems = false
+            includeNegativeItems = false
+            includeUnknownItems = false
+            for (j=0; j < (chartData.diagnoses[i].key_history[0].section[k].items).length; j++) {
+              itemName = chartData.diagnoses[i].key_history[0].section[k].items[j].item + "-btn"
+              switch(document.querySelector("input[name='"+itemName+"']:checked").value) {
+                case "yes":
+                  positiveItems += "<li>" + chartData.diagnoses[i].key_history[0].section[k].items[j].item + "</li>"
+                  includePositiveItems = true
+                  break
+                case "no":
+                  negativeItems += "<li>" + chartData.diagnoses[i].key_history[0].section[k].items[j].item + "</li>"
+                  includeNegativeItems = true
+                  break
+                case "unknown":
+                  unknownItems += "<li>" + chartData.diagnoses[i].key_history[0].section[k].items[j].item + "</li>"
+                  includeUnknownItems = true
+                  break
+              }
+            }
+            positiveItems += "</ul>"
+            negativeItems += "</ul>"
+            unknownItems += "</ul>"
+            if (includePositiveItems) { chartHTML += positiveItems }
+            if (includeNegativeItems) { chartHTML += negativeItems }
+            if (includeUnknownItems) { chartHTML += unknownItems }
+          } // end of key_history section
+
+          for (k=0; k < (chartData.diagnoses[i].risk_factor[0].section).length; k++) {
+            positiveItems = "The <b>" + chartData.diagnoses[i].risk_factor[0].section[k].name + "</b> items that are positive include: <ul>"
+            negativeItems = "The <b>" + chartData.diagnoses[i].risk_factor[0].section[k].name + "</b> items that are negative include: <ul>"
+            unknownItems = "The <b>" + chartData.diagnoses[i].risk_factor[0].section[k].name + "</b> items that are unknown by the patient include: <ul>"
+            includePositiveItems = false
+            includeNegativeItems = false
+            includeUnknownItems = false
+            for (j=0; j < (chartData.diagnoses[i].risk_factor[0].section[k].items).length; j++) {
+              itemName = chartData.diagnoses[i].risk_factor[0].section[k].items[j].item + "-btn"
+              switch(document.querySelector("input[name='"+itemName+"']:checked").value) {
+                case "yes":
+                  positiveItems += "<li>" + chartData.diagnoses[i].risk_factor[0].section[k].items[j].item + "</li>"
+                  includePositiveItems = true
+                  break
+                case "no":
+                  negativeItems += "<li>" + chartData.diagnoses[i].risk_factor[0].section[k].items[j].item + "</li>"
+                  includeNegativeItems = true
+                  break
+                case "unknown":
+                  unknownItems += "<li>" + chartData.diagnoses[i].risk_factor[0].section[k].items[j].item + "</li>"
+                  includeUnknownItems = true
+                  break
+              }
+            }
+            positiveItems += "</ul>"
+            negativeItems += "</ul>"
+            unknownItems += "</ul>"
+            if (includePositiveItems) { chartHTML += positiveItems }
+            if (includeNegativeItems) { chartHTML += negativeItems }
+            if (includeUnknownItems) { chartHTML += unknownItems }
+          } // end of risk_factor section
+
+          positiveItems = "The <b>differential diagnosis</b> items that have been considered and deemed possible or likely include: <ul>"
+          negativeItems = "The <b>differential diagnosis</b> items that have been considered but deemed unlikely based on history and physical exam include: <ul>"
+          includePositiveItems = false
+          includeNegativeItems = false
+          for (k=0; k < (chartData.diagnoses[i].ddx).length; k++) {
+            itemName = chartData.diagnoses[i].ddx[k].item + "-btn"
+            switch(document.querySelector("input[name='"+itemName+"']:checked").value) {
+              case "considered and likely":
+                positiveItems += "<li>" + chartData.diagnoses[i].ddx[k].item + "</li>"
+                includePositiveItems = true
+                break
+              case "considered but unlikely":
+                negativeItems += "<li>" + chartData.diagnoses[i].ddx[k].item + "</li>"
+                includeNegativeItems = true
+                break
+            }
+          }
+          positiveItems += "</ul>"
+          negativeItems += "</ul>"
+          if (includePositiveItems) { chartHTML += positiveItems }
+          if (includeNegativeItems) { chartHTML += negativeItems }
+          // end of ddx section
+
+          positiveItems = "<b>Medical Decision Making:</b>"
+          includePositiveItems = false
+          for (k=0; k < (chartData.diagnoses[i].mdm).length; k++) {
+            itemName = chartData.diagnoses[i].mdm[k].item + "-btn"
+            console.log(document.querySelector("input[name='"+itemName+"']:checked").value)
+            switch(document.querySelector("input[name='"+itemName+"']:checked").value) {
+              case "include":
+                positiveItems += "<br>" + chartData.diagnoses[i].mdm[k].text + "<br>"
+                includePositiveItems = true
+                break
+            }
+          }
+          if (includePositiveItems) { chartHTML += positiveItems }
+          // end of mdm section
+
+        } // end building of chart
+      }
+      document.getElementById("chartOutput").innerHTML = chartHTML
+
+    }
+
+    function copyToClipboard() {
+      let r = document.createRange()
+      document.getElementById("copyButton").remove()
+      r.selectNode(document.getElementById("chartOutput"))
+      window.getSelection().removeAllRanges()
+      window.getSelection().addRange(r)
+      document.execCommand('copy')
+      window.getSelection().removeAllRanges()
+    }
+  </script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>

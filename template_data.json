@@ -135,14 +135,30 @@
     "key_history": [
       {
         "section": [
-          {"name": "NAME", "items": [
-              {"item": "TEXT", "value": "unaddressed"},
-              {"item": "TEXT", "value": "yes"},
-              {"item": "TEXT", "value": "no"},
-              {"item": "TEXT", "value": "unknown"}
+          {"name": "associated symptoms", "items": [
+              {"item": "fever", "value": "unaddressed"},
+              {"item": "nausea/vomiting", "value": "unaddressed"},
+              {"item": "diarrhea", "value": "unaddressed"},
+              {"item": "hematemsis", "value": "unaddressed"},
+              {"item": "blood in stool", "value": "unaddressed"},
+              {"item": "constipation", "value": "unaddressed"}
           ]},
-          {"name": "NAME", "items": [
-            {"item": "TEXT", "value": "unaddressed"}
+          {"name": "pregnancy status", "items": [
+            {"item": "known pregnant", "value": "unaddressed"},
+            {"item": "possibly pregnant", "value": "unaddressed"},
+            {"item": "S/P sterilization", "value": "unaddressed"},
+            {"item": "S/P menopause", "value": "unaddressed"}
+          ]},
+          {"name": "GU symptoms", "items": [
+            {"item": "dysuria", "value": "unaddressed"},
+            {"item": "urethral discharge", "value": "unaddressed"},
+            {"item": "frequency", "value": "unaddressed"},
+            {"item": "urinary pressure", "value": "unaddressed"},
+            {"item": "genital ulcers/sores", "value": "unaddressed"},
+            {"item": "vaginal bleeding", "value": "unaddressed"},
+            {"item": "testicular pain", "value": "unaddressed"},
+            {"item": "scrotal swelling", "value": "unaddressed"},
+            {"item": "scrotal redness", "value": "unaddressed"}
           ]}
         ]
       }
@@ -150,25 +166,54 @@
     "risk_factor": [
       {
         "section": [
-          {"name": "NAME", "items": [
-            {"item": "text", "value": "unaddressed"},
-            {"item": "text", "value": "unaddressed"}
+          {"name": "ectopic", "items": [
+            {"item": "infertility", "value": "unaddressed"},
+            {"item": "prior ectopic", "value": "unaddressed"},
+            {"item": "history of PID", "value": "unaddressed"},
+            {"item": "current IUD", "value": "unaddressed"},
+            {"item": "recent elective abortion", "value": "unaddressed"}
           ]},
-          {"name": "NAME", "items": [
-            {"item": "text", "value": "unaddressed"},
-            {"item": "text", "value": "unaddressed"}
+          {"name": "abdominal aortic aneurysm", "items": [
+            {"item": "age > 45 years", "value": "unaddressed"},
+            {"item": "hypertension", "value": "unaddressed"},
+            {"item": "family history", "value": "unaddressed"},
+            {"item": "current AAA", "value": "unaddressed"},
+            {"item": "syncope with abdominal pain", "value": "unaddressed"}
+          ]},
+          {"name": "ischemic bowel", "items": [
+            {"item": "age > 60 years", "value": "unaddressed"},
+            {"item": "atrial fibrillation", "value": "unaddressed"},
+            {"item": "recent AMI", "value": "unaddressed"},
+            {"item": "peripheral vascular disease", "value": "unaddressed"},
+            {"item": "congestive heart failure", "value": "unaddressed"}
           ]}
         ]
       }
     ],
     "ddx": [
-      {"item": "text", "value": "considered and likely"},
-      {"item": "text", "value": "considered but unlikely"},
-      {"item": "text", "value": "unaddressed"}
+      {"item": "abdominal aortic aneurysm", "value": "unaddressed"},
+      {"item": "appendicitis", "value": "unaddressed"},
+      {"item": "cholecystitis", "value": "unaddressed"},
+      {"item": "cholelithiasis", "value": "unaddressed"},
+      {"item": "diverticular disease", "value": "unaddressed"},
+      {"item": "ectopic pregnancy", "value": "unaddressed"},
+      {"item": "hernia", "value": "unaddressed"},
+      {"item": "ischemic bowel", "value": "unaddressed"},
+      {"item": "myocardial infarction", "value": "unaddressed"},
+      {"item": "obstruction", "value": "unaddressed"},
+      {"item": "pancreatitis", "value": "unaddressed"},
+      {"item": "peptic ulcer disease/GERD", "value": "unaddressed"},
+      {"item": "perforated viscus", "value": "unaddressed"},
+      {"item": "pneumonia", "value": "unaddressed"},
+      {"item": "renal colic", "value": "unaddressed"},
+      {"item": "spontaneous bacterial peritonitis", "value": "unaddressed"},
+      {"item": "urinary retention", "value": "unaddressed"},
+      {"item": "UTI/pyelonephritis", "value": "unaddressed"},
+      {"item": "torsion", "value": "unaddressed"}
     ],
     "mdm": [
       {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
-      {"item": "itemName", "text": "Extra long MDM text", "value": "include"}
+      {"item": "itemName", "text": "Extra long MDM text", "value": "do not include"}
     ],
     "resource": [
       {"item": "Resource text", "value": "http://mdcalc.com"}
@@ -179,14 +224,36 @@
     "key_history": [
       {
         "section": [
-          {"name": "NAME", "items": [
-              {"item": "TEXT", "value": "unaddressed"},
-              {"item": "TEXT", "value": "yes"},
-              {"item": "TEXT", "value": "no"},
-              {"item": "TEXT", "value": "unknown"}
-          ]},
-          {"name": "NAME", "items": [
-            {"item": "TEXT", "value": "unaddressed"}
+          {"name": "high risk features", "items": [
+              {"item": "abnormal vital signs", "value": "unaddressed"},
+              {"item": "age >50 years", "value": "unaddressed"},
+              {"item": "associated trauma", "value": "unaddressed"},
+              {"item": "incontinence", "value": "unaddressed"},
+              {"item": "saddle anesthesia", "value": "unaddressed"},
+              {"item": "urinary retention", "value": "unaddressed"},
+              {"item": "loss of rectal tone", "value": "unaddressed"},
+              {"item": "bilateral sciatica", "value": "unaddressed"},
+              {"item": "leg weakness", "value": "unaddressed"},
+              {"item": "focal neurologic finding", "value": "unaddressed"},
+              {"item": "postive Babinski sign", "value": "unaddressed"},
+              {"item": "percussive pain", "value": "unaddressed"},
+              {"item": "fever", "value": "unaddressed"},
+              {"item": "immunocompromised", "value": "unaddressed"},
+              {"item": "IV drug use", "value": "unaddressed"},
+              {"item": "anticoagulant use", "value": "unaddressed"},
+              {"item": "tuberculosis", "value": "unaddressed"},
+              {"item": "unexpected weight loss", "value": "unaddressed"},
+              {"item": "history of cancer", "value": "unaddressed"},
+              {"item": "steroid use", "value": "unaddressed"},
+              {"item": "syncope", "value": "unaddressed"},
+              {"item": "pulsating abdominal mass", "value": "unaddressed"},
+              {"item": "recenet spinal procedure", "value": "unaddressed"},
+              {"item": "new ataxia", "value": "unaddressed"},
+              {"item": "frequent falls", "value": "unaddressed"},
+              {"item": "clotting disease", "value": "unaddressed"},
+              {"item": "noctural pain", "value": "unaddressed"},
+              {"item": "severe pain when supine", "value": "unaddressed"},
+              {"item": "≥3 weeks of pain", "value": "unaddressed"}
           ]}
         ]
       }
@@ -194,21 +261,37 @@
     "risk_factor": [
       {
         "section": [
-          {"name": "NAME", "items": [
-            {"item": "text", "value": "unaddressed"},
-            {"item": "text", "value": "unaddressed"}
-          ]},
-          {"name": "NAME", "items": [
-            {"item": "text", "value": "unaddressed"},
-            {"item": "text", "value": "unaddressed"}
+          {"name": "abdominal aortic aneurysm", "items": [
+            {"item": "age ≥45 years", "value": "unaddressed"},
+            {"item": "hypertension", "value": "unaddressed"},
+            {"item": "family history of AAA", "value": "unaddressed"},
+            {"item": "current AAA", "value": "unaddressed"},
+            {"item": "syncope with pain", "value": "unaddressed"}
           ]}
         ]
       }
     ],
     "ddx": [
-      {"item": "text", "value": "considered and likely"},
-      {"item": "text", "value": "considered but unlikely"},
-      {"item": "text", "value": "unaddressed"}
+      {"item": "abdominal aortic aneurysm", "value": "unaddressed"},
+      {"item": "aortic dissection", "value": "unaddressed"},
+      {"item": "cauda equina syndrome", "value": "unaddressed"},
+      {"item": "disc herniation", "value": "unaddressed"},
+      {"item": "ectopic pregnancy", "value": "unaddressed"},
+      {"item": "epidural abscess", "value": "unaddressed"},
+      {"item": "epidural hematoma", "value": "unaddressed"},
+      {"item": "meningitis", "value": "unaddressed"},
+      {"item": "muscle strain", "value": "unaddressed"},
+      {"item": "myocardial infarction", "value": "unaddressed"},
+      {"item": "non-specific back pain", "value": "unaddressed"},
+      {"item": "perforated viscus", "value": "unaddressed"},
+      {"item": "pneumonia", "value": "unaddressed"},
+      {"item": "prostatitis", "value": "unaddressed"},
+      {"item": "pulomary embolus/infarct", "value": "unaddressed"},
+      {"item": "renal colic", "value": "unaddressed"},
+      {"item": "retroperitoneal hematoma", "value": "unaddressed"},
+      {"item": "sciatica", "value": "unaddressed"},
+      {"item": "septic discitis", "value": "unaddressed"},
+      {"item": "vertebral osteomyelitis", "value": "unaddressed"}
     ],
     "mdm": [
       {"item": "itemName", "text": "Long MDM text", "value": "do not include"},
@@ -449,11 +532,11 @@
       {"item": "tension headache", "value": "unaddressed"}
     ],
     "mdm": [
+      {"item": "migraine cocktail", "value": "Migraine Cocktail: acetaminophen 650 mg PO, diphenhyramine 25 mg IV, 0.9% NS 1 L bolus IV, prochlorperazine 10 mg IV over 15 min, dexamethasone 10 mg IV, ketorolac 10 mg IV"},
       {"item": "SAH-mdm", "text": "Over 90% of patients with subarachnoid hemorrhage will report a sudden, sever headache, and 30% of the time the headache will lateralize to the side of the head.", "value": "do not include"},
       {"item": "meningitis-mdm", "text": "Fever, neck pain, or altered mental status is present in 99-100% of patients with meningitis; therefore, the absence of all three of these symptoms or exam findings is reassuring.", "value": "include"}
     ],
     "resource": [
-      {"item": "migraine cocktail", "value": "Migrain Cocktail: acetaminophen 650 mg PO, diphenhyramine 25 mg IV, 0.9% NS 1 L bolus IV, prochlorperazine 10 mg IV over 15 min, dexamethasone 10 mg IV, ketorolac 10 mg IV"},
       {"item": "ACEP headache guideline", "value": "https://www.mdcalc.com/guidelines/acep/headache"},
       {"item": "Ottawa SAH rule", "value": "https://www.mdcalc.com/ottawa-subarachnoid-hemorrhage-sah-rule-headache-evaluation"}
     ]
